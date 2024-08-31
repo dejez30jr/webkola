@@ -14,7 +14,7 @@
 
 <body class="none">
   <!-- ini navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top p-2 bg-light">
+  <nav class="navbar navbar-expand-lg fixed-top p-2 bg-light" id="nav">
     <div class="container-fluid">
       <img src="aset/smknuri.jpeg" width="50" height="50" style="border-radius: 50%; margin: 5px; margin: 5px;">
       <a class="navbar-brand fs-3" id="none">𝐒𝐌𝐊 𝐍𝐔𝐑𝐔𝐋 𝐈𝐌𝐀𝐍</a>
@@ -201,11 +201,13 @@
         <div class="title-prestasi">
           <b style="font-size: 20px;">JUARA 1 CABANG SILAT SE DKI JKT</b>
           <div class="tgl-prestasi">
-            <i class="ph ph-calendar-dots"></i>
+            <div class="i-prestasi">
+              <i class="ph ph-calendar-dots"></i>
+            </div>
             <p>20 mart, 2021</p>
           </div>
           <div class="user-prestasi">
-            <i class="ph ph-user"></i>
+            <i class="ph ph-user">:</i>
             <p>Muhammad ucup baba</p>
           </div>
         </div>
@@ -220,11 +222,13 @@
         <div class="title-prestasi">
           <b style="font-size: 20px;">JUARA 1 CABANG SILAT SE DKI JKT</b>
           <div class="tgl-prestasi">
-            <i class="ph ph-calendar-dots"></i>
+            <div class="i-prestasi">
+              <i class="ph ph-calendar-dots"></i>
+            </div>
             <p>20 mart, 2021</p>
           </div>
           <div class="user-prestasi">
-            <i class="ph ph-user"></i>
+            <i class="ph ph-user">:</i>
             <p>Muhammad ucup baba</p>
           </div>
         </div>
@@ -239,11 +243,13 @@
         <div class="title-prestasi">
           <b style="font-size: 20px;">JUARA 1 CABANG SILAT SE DKI JKT</b>
           <div class="tgl-prestasi">
-            <i class="ph ph-calendar-dots"></i>
+            <div class="i-prestasi">
+              <i class="ph ph-calendar-dots"></i>
+            </div>
             <p>20 mart, 2021</p>
           </div>
           <div class="user-prestasi">
-            <i class="ph ph-user"></i>
+            <i class="ph ph-user">:</i>
             <p>Muhammad ucup baba</p>
           </div>
         </div>
@@ -361,6 +367,10 @@
           <input required="" placeholder="Enter your name" class="form-input" type="text">
         </div>
         <div class="form-group">
+          <label class="form-label" for="name">Subject:</label>
+          <input required="" placeholder="Enter your subject" class="form-input" type="text">
+        </div>
+        <div class="form-group">
           <label class="form-label" for="email">Email:</label>
           <input required="" placeholder="Enter your email" class="form-input" name="email" id="email" type="email">
         </div>
@@ -375,73 +385,86 @@
 
     <div class="text-kontak">
       <div class="isi-kontak">
-        <i class="ph ph-map-pin" style="border: 1px solid black; padding: 10px; border-radius: 10px;"></i>
-        <strong>Jl pisangan baru jaktim</strong>
+        <i class="ph ph-map-pin"
+          style="border: 1px solid black; padding: 10px; border-radius: 10px; display: flex; justify-content: center; align-items: center;"></i>
+        <div class="t-kontak">
+          <strong>alamat</strong>
+          <p>jl pisangan baru </p>
+        </div>
       </div>
       <div class="isi-kontak">
-        <i class="ph ph-envelope-simple" style="border: 1px solid black; padding: 10px; border-radius: 10px;"></i>
-        <strong>Jl pisangan baru jaktim</strong>
+        <i class="ph ph-envelope-simple" style="border: 1px solid black; padding: 10px; border-radius: 10px; display: flex; justify-content: center; align-items: center;"></i>
+        <div class="t-kontak">
+          <strong>email</strong>
+          <p>yahoyahon@gmail.com</p>
+        </div>
       </div>
       <div class="isi-kontak">
-        <i class="ph ph-phone" style="border: 1px solid black; padding: 10px; border-radius: 10px;"></i>
-        <strong>Jl pisangan baru jaktim</strong>
+        <i class="ph ph-phone" style="border: 1px solid black; padding: 10px; border-radius: 10px; display: flex; justify-content: center; align-items: center;"></i>
+        <div class="t-kontak">
+          <strong>Phone</strong>
+          <p>0878679523</p>
+        </div>
       </div>
       <div class="isi-kontak">
-        <i class="ph ph-instagram-logo" style="border: 1px solid black; padding: 10px; border-radius: 10px;"></i>
-        <strong>Jl pisangan baru jaktim</strong>
+        <i class="ph ph-instagram-logo" style="border: 1px solid black; padding: 10px; border-radius: 10px; display: flex; justify-content: center; align-items: center;"></i>
+        <div class="t-kontak">
+          <strong>instagram</strong>
+          <p>@smknuruliman</p>
+        </div>
       </div>
     </div>
   </div>
   <!-- section7 (maps) -->
   <div class="map-container">
-  <div class="judul-lokasi">
-    <strong>Denah lokasi</strong>
-  </div>
+    <div class="judul-lokasi">
+      <strong>Denah lokasi</strong>
+    </div>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.186304267757!2d106.87531522991641!3d-6.214492730441286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f483d54a537f%3A0x26aaca5434c73432!2sPERGURUAN%20NURUL%20IMAN%20Jakarta%20Timur!5e0!3m2!1sid!2sid!4v1725106991650!5m2!1sid!2sid"
       width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
-<!-- section8 (footer) -->
- <footer>
-  <div class="ftr">
-    <strong>about</strong>
-    <br>
-    <em>artikel</em>
-    <br>
-    <em>blog</em>
-    <br>
-    <em>privacy</em>
-    <br>
-    <em>smknuruliman</em>
-  </div>
-  <div class="ftr">
-    <strong>sponsor by</strong>
-    <br>
-    <em>telkomsel</em>
-    <br>
-    <em>alfamart</em>
-    <br>
-    <em>pt.mitrais</em>
-    <br>
-    <em>tokoedia</em>
-  </div>
-  <div class="ftr">
-    <strong>created by</strong>
-    <br>
-    <em>RPL</em>
-    <br>
-    <em>geniozis</em>
-    <br>
-    <em>pa sulton</em>
-    <br>
-    <em>teamcode</em>
-  </div>
-  <div class="ftr-end">
-    <img src="aset/smknuri.jpeg" width="80" height=80" style="border-radius: 50%;">
-    <p>smk nurul iman jaktim</p>
-  </div>
- </footer>
+  <!-- section8 (footer) -->
+  <footer>
+    <div class="ftr">
+      <strong>about</strong>
+      <br>
+      <em>artikel</em>
+      <br>
+      <em>blog</em>
+      <br>
+      <em>privacy</em>
+      <br>
+      <em>smknuruliman</em>
+    </div>
+    <div class="ftr">
+      <strong>sponsor by</strong>
+      <br>
+      <em>telkomsel</em>
+      <br>
+      <em>alfamart</em>
+      <br>
+      <em>pt.mitrais</em>
+      <br>
+      <em>tokoedia</em>
+    </div>
+    <div class="ftr">
+      <strong>created by</strong>
+      <br>
+      <em>RPL</em>
+      <br>
+      <em>geniozis</em>
+      <br>
+      <em>pa sulton</em>
+      <br>
+      <em>teamcode</em>
+    </div>
+    <div class="ftr-end">
+      <img src="aset/smknuri.jpeg" width="80" height=80" style="border-radius: 50%;">
+      <p style="font-size: 30px; margin-top: 20px;">smk nurul iman</p>
+    </div>
+  </footer>
 
   <!-- <script>
   document.querySelector('.card-eskul').addEventListener("wheel", function(event){

@@ -1,0 +1,507 @@
+*,
+body,html{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* section 1 */
+body{
+    padding-top: 20px;
+}
+.container{
+    min-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    /* border-image: fill 0 linear-gradient(#0003, black); */
+    background-image: url(https://th.bing.com/th/id/R.7d993cff7c7d027a76495c8e90615d59?rik=0F2odmAiXDrS%2fw&riu=http%3a%2f%2fsmpnuruliman.sch.id%2fupload%2fgallery%2fIMG-20230209-WA0059.jpg&ehk=VYkPr21wFXgAwYv6ZjTiDrzXbB%2fGYLmRoaNAt2PZA0U%3d&risl=&pid=ImgRaw&r=0);
+}
+/* section 2 */
+.sambutan{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.paero-jpg{
+    width: 100%;
+    border-radius: 10px;
+}
+.isi-sambutan1{
+    width: 30%;
+}
+.isi-sambutan2{
+    width: 50%;
+}
+/* section 3 */
+.judul-berita{
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+.berita{
+    width: 100%;
+    height: auto;
+    padding: 10px 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(37, 128, 33);
+}
+.berita-jpg{
+    width: 100%;
+    height: 100%;
+}
+.isi-berita{
+    margin: 10px;
+    width: 25%;
+    background-color: white;
+    color: black;
+}
+.text-berita{
+    padding: 5px;
+    gap: 1rem;
+}
+.tgl-berita{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+.isi-next a{
+    color: white;
+}
+/* section4 */
+.judul-prestasi{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+.prestasi{
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+.prestasi-jpg{
+    width: 30%;
+    height: 100%;
+}
+.isi-prestasi{
+    width: 100%;
+    gap: 1rem;
+    margin: 10px;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    border: 2px solid rgb(216, 216, 216);
+    /* box-shadow: 0 6px 10px rgb(41, 41, 41); */
+}
+.detail-prestasi{
+    padding: 10px;
+}
+.tgl-prestasi{
+    font-size: 20px;
+}
+.user-prestasi{
+    font-size: 20px;
+}
+/* section5 (eskul) */
+.judul-eskul{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px 10px 20px;
+}
+.eskul{
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-around;
+}
+.eskul::-webkit-scrollbar{
+    display: none;
+}
+.card-eskul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.item-eskul{
+    position: relative;
+    width: 300px;
+    margin: 10px;
+    height: 300px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .item-eskul svg {
+    width: 48px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .item-eskul:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  }
+  
+  .card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .item-eskul:hover .card__content {
+    transform: rotateX(0deg);
+  }
+  
+  .card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .item-eskul:hover svg {
+    scale: 0;
+  }
+  
+  .card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+  }
+  /* section6 */
+.judul-jurusan{
+ text-align: center;
+ color: rgb(0, 0, 0);
+ padding: 10px;
+ margin-top: 50px;
+}
+.jurusan{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.item-jurusan {
+    width: 190px;
+    margin: 10px;
+    height: 254px;
+    background: #07182E;
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  
+  .item-jurusan h4 {
+    z-index: 1;
+    color: white;
+    font-size: 2em;
+  }
+  
+  .item-jurusan::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+    height: 130%;
+    animation: rotBGimg 3s linear infinite;
+    transition: all 0.2s linear;
+  }
+  
+  @keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .item-jurusan::after {
+    content: '';
+    position: absolute;
+    background: #07182E;
+    ;
+    inset: 5px;
+    border-radius: 15px;
+  }  
+/* scetion7 */
+.judul-kontak{
+    text-align: center;
+    padding: 10px;
+    margin-top: 90px;
+}
+.kontak{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+.item-kontak{
+    width: 40%;
+}
+.colorful-form {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+  }
+  
+  textarea.form-input {
+    height: 100px;
+  }
+  
+  .form-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6f69;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-button:hover {
+    background-color: #ff5f59;
+  }
+  .text-kontak{
+  width: 40%;
+  height: auto;
+  }
+  .isi-kontak{
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+
+/* scetion7 */
+.map-container{
+    text-align: center;
+    padding: 10px;
+    background-attachment: fixed;
+}
+iframe{
+    width: 80%;
+}
+.judul-lokasi{
+    width: 100%;
+    font-size: 20px;
+}
+/* section8 */
+footer{
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1003%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(39%2c 43%2c 46%2c 1)'%3e%3c/rect%3e%3cpath d='M1370 55L1369 -166' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M944 158L943 455' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M134 475L133 627' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M500 207L499 392' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M620 180L619 358' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1005%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M937 323L936 153' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1336 204L1335 404' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1005%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1295 385L1294 729' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1005%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M772 460L771 139' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1372 123L1371 398' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1005%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1437 270L1436 526' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M266 36L265 297' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M81 152L80 -227' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M39 231L38 383' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M881 371L880 600' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1005%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1186 176L1185 -174' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M899 108L898 -74' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1005%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1319 214L1318 35' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M991 522L990 907' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1005%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1375 337L1374 31' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1005%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M802 516L801 686' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1005%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M291 149L290 -175' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M184 540L183 381' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1005%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1372 19L1371 -223' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M337 501L336 289' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1005%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M410 215L409 -192' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1371 64L1370 408' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1005%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M842 340L841 -28' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M664 13L663 -406' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1005%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1164 320L1163 496' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1005%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M740 501L739 288' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1062 344L1061 143' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M64 265L63 487' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M396 322L395 714' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1005%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M373 52L372 402' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M62 482L61 138' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1003'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='0%25' y1='0%25' x2='0%25' y2='100%25' id='SvgjsLinearGradient1004'%3e%3cstop stop-color='rgba(28%2c 83%2c 142%2c 0)' offset='0'%3e%3c/stop%3e%3cstop stop-color='%231c538e' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='0%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient1005'%3e%3cstop stop-color='rgba(28%2c 83%2c 142%2c 0)' offset='0'%3e%3c/stop%3e%3cstop stop-color='%231c538e' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.ftr{
+    flex-direction: column;
+    width: 20%;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin: 10px;
+}
+.ftr-end{
+    text-align: center;
+    color: white;
+    bottom: 0;
+}
+
+  
+  
+@media (max-width: 690px){
+    .kontak{
+        flex-direction: column;
+    }
+    .item-kontak{
+        width: 100%;
+    }
+    .text-kontak{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 600px){
+    /* section2 */
+    .sambutan{
+        flex-wrap: wrap;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .isi-sambutan1{
+        width: 90%;
+        margin-top: 20px;
+    }
+    .isi-sambutan2{
+        width: 90%;
+    }
+    /* Section3 */
+    .berita{
+        padding: 0;
+    }
+     .isi-berita{
+        min-width: 40%;
+    }
+    .tgl-berita{
+        flex-wrap: wrap;
+        font-size: 13px;
+    }
+    .isi-next {
+        min-width: 70%;
+    }
+    .isi-next a{
+        color: white;
+    }
+    /* section4 */
+    .judul-prestasi{
+        width: 100%;
+    }
+    .prestasi{
+        justify-content: space-around;
+        overflow: auto;
+        flex-wrap: wrap;
+    }
+    .card-prestasi{
+        flex-direction: row;
+        width: auto;
+    }
+    .prestasi-jpg{
+        width: 100%;
+        height: 200px;
+    }
+    .isi-prestasi{
+        min-width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        box-shadow: 0 6px 10px rgb(200, 199, 199);
+    }
+    .tgl-prestasi{
+        font-size: 15px;
+    }
+    .user-prestasi{
+        font-size: 15px;
+    }
+    /* sevtion5 */
+    .eskul{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: auto;
+    }
+    .item-eskul{
+        min-width: 200px;
+    }
+    .card-eskul{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    /* scetion6 */
+    .item-jurusan{
+        width: 90%;
+    }
+    /* section7 */
+    .item-kontak{
+        width: 90%;
+        margin: auto;
+    }
+    .text-kontak{
+        width: 90%;
+    }
+    .isi-kontak{
+        padding: 10px;
+    }
+    .map-container{
+        margin-top: 30px;
+        width: 100%;
+        height: 40%;
+    }
+    iframe{
+        width: 90%;
+    }
+    /* scetion8 */
+    footer{
+     height: 100vh;
+    }
+    .ftr{
+        width: 90%;
+    }
+
+  /* navbar */
+    nav{
+        background-color: white;
+        color: black;
+        /* box-shadow: 0 3px 10px rgb(60, 60, 60); */
+    }
+    #none{
+        display: none;
+    }
+}

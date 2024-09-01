@@ -10,7 +10,7 @@ body,html{
 body{
     padding-top: 20px;
 }
-.container{
+.containers{
     min-width: 100%;
     height: 100vh;
     display: flex;
@@ -19,8 +19,8 @@ body{
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    border-image: fill 0 linear-gradient(#0003,#000);
-    background-image: url(https://th.bing.com/th/id/R.7d993cff7c7d027a76495c8e90615d59?rik=0F2odmAiXDrS%2fw&riu=http%3a%2f%2fsmpnuruliman.sch.id%2fupload%2fgallery%2fIMG-20230209-WA0059.jpg&ehk=VYkPr21wFXgAwYv6ZjTiDrzXbB%2fGYLmRoaNAt2PZA0U%3d&risl=&pid=ImgRaw&r=0);
+    border-image: fill 0 linear-gradient(#0003,#0003);
+    background-image: url(aset/page.jpg);
 }
 /* section 2 */
 .sambutan{
@@ -32,11 +32,14 @@ body{
     gap: 2rem;
 }
 .paero-jpg{
+    box-shadow: 0 6px 10px rgb(48, 48, 48);
     width: 100%;
+    height: 100%;
     border-radius: 10px;
 }
 .isi-sambutan1{
-    width: 30%;
+    width: 20%;
+    height: 50%;
 }
 .isi-sambutan2{
     width: 50%;
@@ -44,7 +47,8 @@ body{
 /* section 3 */
 .judul-berita{
     width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     color: white;
     padding: 20px;
 }
@@ -56,7 +60,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: rgb(30, 32, 50);
+    background-color: rgb(32, 94, 18);
 }
 .berita-jpg{
     width: 100%;
@@ -79,7 +83,7 @@ body{
     padding: 5px;
 }
 .isi-next a{
-    color: white;
+    color: rgb(255, 255, 255);
 }
 /* section4 */
 .judul-prestasi{
@@ -137,7 +141,6 @@ body{
     padding: 10px;
     width: 100%;
     flex-wrap: wrap;
-    overflow: hidden;
     justify-content: space-around;
 }
 .eskul::-webkit-scrollbar{
@@ -148,128 +151,529 @@ body{
     flex-wrap: wrap;
     justify-content: center;
 }
-.item-eskul{
-    position: relative;
+/* 1 */
+.item-eskul1 {
     width: 300px;
     margin: 10px;
-    height: 300px;
-    background-color: #f2f2f2;
-    border-radius: 10px;
+    height: 250px;
+    border-radius: 20px;
+    background-image: url(aset/bgnuri.jpg);
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    transition: all .3s;
+  }
+  .item-eskul1:hover {
+    transform: scale(0.9);
+  }
+  
+  .item-eskul1 spans {
+    position: absolute;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    top: -10px;
+    left: -10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-    perspective: 1000px;
-    box-shadow: 0 0 0 5px #ffffff80;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
   
-  .item-eskul svg {
-    width: 48px;
-    fill: #333;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-  
-  .item-eskul:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
-  }
-  
-  .card__content {
+  .item-eskul1 spans::before {
+    content: 'paskib';
     position: absolute;
-    top: 0;
+    width: 150%;
+    height: 40px;
+    background-image: linear-gradient(45deg, #ff6547 0%, #ffb144  51%, #ff7053  100%);
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+  }
+  
+  .item-eskul1 spans::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    bottom: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #f2f2f2;
-    transform: rotateX(-90deg);
-    transform-origin: bottom;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    height: 10px;
+    z-index: -1;
+    box-shadow: 140px -140px #cc3f47;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  }
+  /* 2 */
+.item-eskul2 {
+    width: 300px;
+    margin: 10px;
+    height: 250px;
+    border-radius: 20px;
+    background-image: url(aset/bgnuri.jpg);
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    transition: all .3s;
+  }
+  .item-eskul2:hover {
+    transform: scale(0.9);
   }
   
-  .item-eskul:hover .card__content {
-    transform: rotateX(0deg);
+  .item-eskul2 spans {
+    position: absolute;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    top: -10px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
-  .card__title {
-    margin: 0;
-    font-size: 24px;
-    color: #333;
-    font-weight: 700;
+  .item-eskul2 spans::before {
+    content: 'pramuka';
+    position: absolute;
+    width: 150%;
+    height: 40px;
+    background-image: linear-gradient(45deg, #ff6547 0%, #ffb144  51%, #ff7053  100%);
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.23);
   }
   
-  .item-eskul:hover svg {
-    scale: 0;
+  .item-eskul2 spans::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    z-index: -1;
+    box-shadow: 140px -140px #cc3f47;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  }
+  /* 3 */
+.item-eskul3 {
+    width: 300px;
+    margin: 10px;
+    height: 250px;
+    border-radius: 20px;
+    background-image: url(aset/bgnuri.jpg);
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    transition: all .3s;
+  }
+  .item-eskul3:hover {
+    transform: scale(0.9);
   }
   
-  .card__description {
-    margin: 10px 0 0;
-    font-size: 14px;
-    color: #777;
-    line-height: 1.4;
+  .item-eskul3 spans {
+    position: absolute;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    top: -10px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .item-eskul3 spans::before {
+    content: 'PMR';
+    position: absolute;
+    width: 150%;
+    height: 40px;
+    background-image: linear-gradient(45deg, #ff6547 0%, #ffb144  51%, #ff7053  100%);
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+  }
+  
+  .item-eskul3 spans::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    z-index: -1;
+    box-shadow: 140px -140px #cc3f47;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  }
+  /* 4 */
+.item-eskul4 {
+    width: 300px;
+    margin: 10px;
+    height: 250px;
+    border-radius: 20px;
+    background-image: url(aset/bgnuri.jpg);
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    transition: all .3s;
+  }
+  .item-eskul4:hover {
+    transform: scale(0.9);
+  }
+  
+  .item-eskul4 spans {
+    position: absolute;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    top: -10px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .item-eskul4 spans::before {
+    content: 'drum band';
+    position: absolute;
+    width: 150%;
+    height: 40px;
+    background-image: linear-gradient(45deg, #ff6547 0%, #ffb144  51%, #ff7053  100%);
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+  }
+  
+  .item-eskul4 spans::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    z-index: -1;
+    box-shadow: 140px -140px #cc3f47;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  }
+  /* 5 */
+  
+.item-eskul5 {
+    width: 300px;
+    margin: 10px;
+    height: 250px;
+    border-radius: 20px;
+    background-image: url(aset/bgnuri.jpg);
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    transition: all .3s;
+  }
+  .item-eskul5:hover {
+    transform: scale(0.9);
+  }
+  
+  .item-eskul5 spans {
+    position: absolute;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    top: -10px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .item-eskul5 spans::before {
+    content: 'silat';
+    position: absolute;
+    width: 150%;
+    height: 40px;
+    background-image: linear-gradient(45deg, #ff6547 0%, #ffb144  51%, #ff7053  100%);
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+  }
+  
+  .item-eskul5 spans::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    z-index: -1;
+    box-shadow: 140px -140px #cc3f47;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  }
+  /* 7 */
+  
+.item-eskul7 {
+    width: 300px;
+    margin: 10px;
+    height: 250px;
+    border-radius: 20px;
+    background-image: url(aset/bgnuri.jpg);
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    transition: all .3s;
+  }
+  .item-eskul1:hover {
+    transform: scale(0.9);
+  }
+  
+  .item-eskul7 spans {
+    position: absolute;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    top: -10px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .item-eskul7 spans::before {
+    content: 'Tari';
+    position: absolute;
+    width: 150%;
+    height: 40px;
+    background-image: linear-gradient(45deg, #ff6547 0%, #ffb144  51%, #ff7053  100%);
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+  }
+  
+  .item-eskul7 spans::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    z-index: -1;
+    box-shadow: 140px -140px #cc3f47;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  }
+  /* 8 */
+.item-eskul8 {
+    width: 300px;
+    margin: 10px;
+    height: 250px;
+    border-radius: 20px;
+    background-image: url(aset/bgnuri.jpg);
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    transition: all .3s;
+  }
+  .item-eskul1:hover {
+    transform: scale(0.9);
+  }
+  
+  .item-eskul8 spans {
+    position: absolute;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    top: -10px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .item-eskul8 spans::before {
+    content: 'Hadroh';
+    position: absolute;
+    width: 150%;
+    height: 40px;
+    background-image: linear-gradient(45deg, #ff6547 0%, #ffb144  51%, #ff7053  100%);
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+  }
+  
+  .item-eskul8 spans::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    z-index: -1;
+    box-shadow: 140px -140px #cc3f47;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  }
+    /* 9 */
+.item-eskul9 {
+    width: 300px;
+    margin: 10px;
+    height: 250px;
+    border-radius: 20px;
+    background-image: url(aset/bgnuri.jpg);
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    transition: all .3s;
+  }
+  .item-eskul9:hover {
+    transform: scale(0.9);
+  }
+  
+  .item-eskul9 spans {
+    position: absolute;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    top: -10px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .item-eskul9 spans::before {
+    content: 'Badminton';
+    position: absolute;
+    width: 150%;
+    height: 40px;
+    background-image: linear-gradient(45deg, #ff6547 0%, #ffb144  51%, #ff7053  100%);
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+  }
+  
+  .item-eskul9 spans::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    z-index: -1;
+    box-shadow: 140px -140px #cc3f47;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
   }
   /* section6 */
 .judul-jurusan{
  text-align: center;
  color: rgb(0, 0, 0);
  padding: 10px;
- margin-top: 50px;
+ margin-top: 8%;
 }
 .jurusan{
     display: flex;
-    justify-content: center;
-    padding: 10px;
+    justify-content: space-evenly;
+    padding: 6% 10px 10px;
     flex-wrap: wrap;
 }
 .item-jurusan {
-    width: 190px;
-    margin: 10px;
+    width: 400px;
     height: 254px;
-    background: #07182E;
+    border-radius: 20px;
+    background: green;
     position: relative;
     display: flex;
-    place-content: center;
-    place-items: center;
-    overflow: hidden;
-    border-radius: 20px;
-  }
-  
-  .item-jurusan h4 {
-    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 1.8rem;
     color: white;
-    font-size: 2em;
-  }
-  
-  .item-jurusan::before {
-    content: '';
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+   }
+   
+   .card-detailse {
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+   }
+   
+   .card-buttons {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #008bf8;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
     position: absolute;
-    width: 100px;
-    background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
-    height: 130%;
-    animation: rotBGimg 3s linear infinite;
-    transition: all 0.2s linear;
-  }
-  
-  @keyframes rotBGimg {
-    from {
-      transform: rotate(0deg);
-    }
-  
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
-  .item-jurusan::after {
-    content: '';
-    position: absolute;
-    background: #07182E;
-    ;
-    inset: 5px;
-    border-radius: 15px;
-  }  
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+   }
+   
+   .text-body {
+    color: rgb(134, 134, 134);
+   }
+   
+   /*Text*/
+   .text-titles {
+    font-size: 1.5em;
+    font-weight: bold;
+   }
+   
+   /*Hover*/
+   .item-jurusan:hover {
+    border-color: #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+   }
+   
+   .item-jurusan:hover .card-buttons {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+   }
 /* scetion7 */
 .judul-kontak{
     text-align: center;
@@ -412,7 +816,12 @@ footer{
     }
     .isi-sambutan1{
         width: 90%;
+        min-height: 30%;
         margin-top: 20px;
+    }
+    .paero-jpg{
+      width: 100%;
+      height: 300px;
     }
     .isi-sambutan2{
         width: 90%;
@@ -466,19 +875,22 @@ footer{
     /* sevtion5 */
     .eskul{
         display: flex;
-        flex-wrap: nowrap;
-        overflow: auto;
+        flex-wrap: wrap;
     }
     .item-eskul{
-        min-width: 200px;
+        width: 90%;
     }
     .card-eskul{
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
     /* scetion6 */
     .item-jurusan{
         width: 90%;
+        margin-top: 20px;
+    }
+    .ribbon{
+        width: 100%;
     }
     /* section7 */
     .item-kontak{
@@ -520,3 +932,4 @@ footer{
         display: none;
     }
 }
+

@@ -3,15 +3,44 @@ body,html{
     padding: 0;
     margin: 0;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
+
+/* aktif & hover navbar :D */
+
+section {
+  padding-top: 0.5em;
+}
+
+section .judul-eskul {
+  padding-top: 5rem;
+}
+
+section .judul-berita
+{
+  padding-top: 7rem;
+}
+
+section .judul-prestasi {
+  padding-top: 6rem;
+}
+
+.navbar a {
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  transition: all 300ms;
+}
+
+.nav-item .nav-link:hover,
+.nav-item .nav-link.Aktif {
+    color: green;
+    border-bottom: 2px solid green;
+}
+/* aktif hover navbar end */
 
 /* section 1 */
 #none{
   font-family: "Oswald", sans-serif;
-}
-body{
-    padding-top: 20px;
 }
 .containers{
     min-width: 100%;
@@ -27,7 +56,11 @@ body{
 }
 /* section 2 */
 .sambutan{
-    width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+.profil-sekolah{
+    min-width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -814,22 +847,25 @@ footer{
 @media (max-width: 600px){
     /* section2 */
     .sambutan{
-        flex-wrap: wrap;
-        height: auto;
+       display: flex;
+       overflow: hidden;
         padding-bottom: 20px;
     }
-    .isi-sambutan1{
-        width: 70%;
-        min-height: 10%;
+    .profil-sekolah{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
         margin-top: 20px;
     }
     .paero-jpg{
       width: 100%;
       height: 300px;
-      border-radius: 50%;
     }
     .isi-sambutan2{
         width: 90%;
+    }
+    .isi-sambutan1{
+      width: 90%;
     }
     /* Section3 */
     .berita{
@@ -922,10 +958,11 @@ footer{
     }
     iframe{
         width: 90%;
+        height: 300px;
     }
     /* scetion8 */
     footer{
-     height: 100vh;
+     height: auto;
     }
     .ftr{
         width: 90%;

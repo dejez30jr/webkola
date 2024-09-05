@@ -969,6 +969,10 @@ footer{
     .isi-sambutan2{
         width: 90%;
         background-color: rgb(255, 255, 255);
+        box-shadow: 0 6px 6px rgb(81, 81, 81);
+    }
+    #h2-sambutan{
+      text-align: center;
     }
     .isi-sambutan1{
       width: 90%;

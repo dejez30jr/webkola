@@ -83,7 +83,6 @@ section .judul-prestasi {
     padding: 0px 5px 0px;
     backdrop-filter: blur(10px);
     color: rgb(31, 30, 30);
-    background-color: rgb(255, 255, 255);
     border-radius: 20px;
 }
 /* section 3 */
@@ -792,6 +791,10 @@ section .judul-prestasi {
   .jurusan-kolom{
     width: 60%;
   }
+  /* sambutan numpang media query */
+ .isi-sambutan2{
+  background-color: rgb(255, 255, 255);
+ }
 }
 @media (min-width: 999px){
   .item-kj{
@@ -965,6 +968,7 @@ footer{
     }
     .isi-sambutan2{
         width: 90%;
+        background-color: rgb(255, 255, 255);
     }
     .isi-sambutan1{
       width: 90%;

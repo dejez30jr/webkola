@@ -58,6 +58,7 @@ section .judul-prestasi {
 .sambutan{
   display: flex;
   overflow: hidden;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1600' height='1000' preserveAspectRatio='none' viewBox='0 0 1600 1000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1081%26quot%3b)' fill='none'%3e%3cpath d='M 0%2c412 C 160%2c455.2 480%2c623.2 800%2c628 C 1120%2c632.8 1440%2c474.4 1600%2c436L1600 1000L0 1000z' fill='rgba(32%2c 94%2c 18%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1081'%3e%3crect width='1600' height='1000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
 }
 .profil-sekolah{
     min-width: 100%;
@@ -79,6 +80,11 @@ section .judul-prestasi {
 }
 .isi-sambutan2{
     width: 50%;
+    padding: 0px 5px 0px;
+    backdrop-filter: blur(10px);
+    color: rgb(31, 30, 30);
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
 }
 /* section 3 */
 .judul-berita{
@@ -107,6 +113,14 @@ section .judul-prestasi {
     width: 25%;
     background-color: white;
     color: black;
+    overflow: hidden;
+}
+#title-berita{
+  font-size: 23px;
+  text-align: center;
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .text-berita{
     padding: 5px 5px 20px;
@@ -193,8 +207,9 @@ section .judul-prestasi {
     margin: 10px;
     height: 250px;
     border-radius: 20px;
-    background-image: url(aset/bgnuri.jpg);
+    background-image: url(https://th.bing.com/th/id/OIP.XTktgAVtgyrfjUuQbn_YdAAAAA?rs=1&pid=ImgDetMain);
     background-size: cover;
+    background-position: center;
     position: relative;
     cursor: pointer;
     transition: all .3s;
@@ -249,8 +264,9 @@ section .judul-prestasi {
     margin: 10px;
     height: 250px;
     border-radius: 20px;
-    background-image: url(aset/bgnuri.jpg);
+    background-image: url(https://th.bing.com/th/id/OIP.9TJyxzBI2pc7vQ2WB3i68QHaHa?w=1480&h=1480&rs=1&pid=ImgDetMain);
     background-size: cover;
+    background-position: center;
     position: relative;
     cursor: pointer;
     transition: all .3s;
@@ -305,8 +321,9 @@ section .judul-prestasi {
     margin: 10px;
     height: 250px;
     border-radius: 20px;
-    background-image: url(aset/bgnuri.jpg);
+    background-image: url(https://th.bing.com/th/id/R.bcd16e4dbe54b25c40169d26b8102334?rik=n4VXMkYXwB8pXA&riu=http%3a%2f%2fsmpn1sgs.sch.id%2fpublic%2fimages%2fartikel%2f08-2017%2f28201707-700x700-pmr.jpg&ehk=Ele3Qt80THVaCL%2f3GhMa4Qf8D%2fdPTTECTmnxtEQzZh0%3d&risl=&pid=ImgRaw&r=0);
     background-size: cover;
+    background-position: center;
     position: relative;
     cursor: pointer;
     transition: all .3s;
@@ -361,8 +378,9 @@ section .judul-prestasi {
     margin: 10px;
     height: 250px;
     border-radius: 20px;
-    background-image: url(aset/bgnuri.jpg);
+    background-image: url(aset/db.jpg);
     background-size: cover;
+    background-position: center;
     position: relative;
     cursor: pointer;
     transition: all .3s;
@@ -418,8 +436,9 @@ section .judul-prestasi {
     margin: 10px;
     height: 250px;
     border-radius: 20px;
-    background-image: url(aset/bgnuri.jpg);
+    background-image: url(https://th.bing.com/th/id/OIP.8iLB2-z5m-ES8iQZOT1HuAHaFw?rs=1&pid=ImgDetMain);
     background-size: cover;
+    background-position: center;
     position: relative;
     cursor: pointer;
     transition: all .3s;
@@ -475,9 +494,10 @@ section .judul-prestasi {
     margin: 10px;
     height: 250px;
     border-radius: 20px;
-    background-image: url(aset/bgnuri.jpg);
+    background-image: url(https://img.freepik.com/premium-vector/traditional-dancer-profession_180868-71.jpg?w=1380);
     background-size: cover;
     position: relative;
+    background-position: center;
     cursor: pointer;
     transition: all .3s;
   }
@@ -531,7 +551,7 @@ section .judul-prestasi {
     margin: 10px;
     height: 250px;
     border-radius: 20px;
-    background-image: url(aset/bgnuri.jpg);
+    background-image: url(https://th.bing.com/th/id/OIP.dGwvhS6f0EEpxtT-7ZJivwHaEo?rs=1&pid=ImgDetMain);
     background-size: cover;
     position: relative;
     cursor: pointer;
@@ -587,8 +607,9 @@ section .judul-prestasi {
     margin: 10px;
     height: 250px;
     border-radius: 20px;
-    background-image: url(aset/bgnuri.jpg);
+    background-image: url(https://img.freepik.com/free-vector/flat-badminton-player-with-racket_52683-12375.jpg?t=st=1718353081~exp=1718356681~hmac=2c003d4322b280c5e76f1d85ce534079ad5d5e8ce20793ef7bc5880422dbdb36);
     background-size: cover;
+    background-position: center;
     position: relative;
     cursor: pointer;
     transition: all .3s;
@@ -954,7 +975,13 @@ footer{
     }
      .isi-berita{
         min-width: 40%;
-        min-height: 350px;
+        min-height: 300px;
+    }
+    #title-berita{
+      font-size: 14px;
+    }
+    .title-secend{
+      font-size: 12px;
     }
     .tgl-berita{
         flex-wrap: wrap;
@@ -964,6 +991,9 @@ footer{
     }
     .text-berita{
       padding-bottom: 0;
+    }
+    .tgl-berita{
+      margin-top: 40px;
     }
     .isi-next {
         min-width: 70%;
@@ -1074,5 +1104,12 @@ footer{
 @media (max-width: 400px){
   .item-eskul1, .item-eskul2, .item-eskul3, .item-eskul4, .item-eskul5, .item-eskul7, .item-eskul8, .item-eskul9{
     width: 100%;
+  }
+}
+
+/* respponsive tambahan */
+@media(max-width: 320px){
+  .tgl-berita{
+    flex-direction: column;
   }
 }

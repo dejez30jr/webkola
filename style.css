@@ -955,6 +955,7 @@ footer{
        display: flex;
        overflow: hidden;
         padding-bottom: 20px;
+        background-image: none;
     }
     .profil-sekolah{
         width: 100%;
@@ -969,7 +970,6 @@ footer{
     .isi-sambutan2{
         width: 90%;
         background-color: rgb(255, 255, 255);
-        box-shadow: 0 6px 6px rgb(81, 81, 81);
     }
     #h2-sambutan{
       text-align: center;

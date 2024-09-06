@@ -41,3 +41,13 @@ window.onscroll = () => {
     });
 };
 // hover navbar end
+
+// popup
+document.querySelectorAll('.popklik').forEach(item => {
+    item.addEventListener('click', function() {
+        let popupId = this.getAttribute('data-popup');
+        let popup = document.getElementById(popupId);
+        popup.classList.toggle('on');
+    });
+});
+//pop end

@@ -89,7 +89,6 @@ section .judul-prestasi {
 .isi-identitas {
   width: 900px;
   height: 800px;
-  overflow: auto;
   margin: 20px auto;
   background-color: #fff;
   padding: 20px;

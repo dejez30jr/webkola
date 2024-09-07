@@ -5,7 +5,14 @@ body,html{
     text-decoration: none;
     scroll-behavior: smooth;
 }
+body::-webkit-scrollbar{
+  display: none;
+}
 
+/* server down  apdet*/
+.server-down{
+  display: none;
+}
 
 /* aktif & hover navbar :D */
 
@@ -103,13 +110,29 @@ section .judul-prestasi {
   align-items: center;
   gap: 2rem;
 }
+/* fasilitas */
 .fasilitas-sekolah{
+  padding: 20px 20px 0px;
   min-width: 100%;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 2rem;
+  justify-content: center;
+  gap: 1rem;
+}
+.isi-fasilitas{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.fasilitas-jpgs{
+width: 500px;
+height: 300px;
+margin: 3px;
+}
+.btn-fasilitas{
+  display: none;
 }
 /* visimisi */
 .visimisi-sekolah{
@@ -127,6 +150,9 @@ section .judul-prestasi {
   padding: 10px;
   border-radius: 10px;
 }
+#popup-visimisi{
+  display: none;
+}
 /* visimisi end */ 
 .isi-sambutan2{
   width: 50%;
@@ -137,12 +163,13 @@ section .judul-prestasi {
 }
 
 .paero-jpg{
-    width: 30%;
+    width: 20%;
     height: 40%;
     border-radius: 10px;
 }
 .kepsek-jpg{
   border-radius: 20px;
+  width: 20%;
 }
 
 /* section 3 */
@@ -1063,16 +1090,17 @@ footer{
         height: 1000px;
     }
     /* new apdet */
+    /* pp seklah */
     .profil-sekolah{    
       min-width: 100%;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
       flex-direction: column;
-      align-items: center;
       gap: 2rem;
       padding-top: 10%;
       padding-bottom: 30px;
+  }
+  .kepsek-jpg{
+    width: 50%;
+    height: 30%;
   }
   .sejarah-sekolah{
     padding-top: 10%;
@@ -1110,15 +1138,31 @@ footer{
     align-items: center;
     gap: 2rem;
   }
+  /* fasilitas */
   .fasilitas-sekolah{
     min-width: 100%;
-    height: 100vh;
+    height: auto;
     flex-direction: column;
-    display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
   }
+  .fasilitas-jpgs{
+    width: 90%;
+    height: 15%;
+  }
+  #fasilitas-none{
+    display: none;
+   }
+   .btn-fasilitas{
+    display: flex;
+   }
+   .btn-fasilitas a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+   }
   /* visimisi */
   .visimisi-sekolah{
     padding-top: 10%;
@@ -1297,6 +1341,9 @@ footer{
   width: 100%;
   font-size: 13px;
  }
+ .kepsek-jpg{
+  height: 200px;
+ }
  /* sejarah-sekolah */
  .sejarah-sekolah{
   padding-top: 100%;
@@ -1306,8 +1353,28 @@ footer{
  }
  /* pp guru */
  .guru-sekolah{
-  padding-top: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 1300px;
+ }
+ /* visimisi */
+ .visimisi-sekolah{
+  padding-top: 10%;
+ }
+ .isi-visimisi1{
+  height: 900px;
+  overflow: hidden;
+ }
+ #popup-visimisi{
+  display: flex;
+ }
+ /* fasilitas seklh */
+ .fasilitas-sekolah{
+  padding-top: 10%;
+ }
+ .fasilitas-jpgs{
+  width: 100%;
  }
 }
 
@@ -1315,5 +1382,19 @@ footer{
 @media(max-width: 320px){
   .tgl-berita{
     flex-direction: column;
+  }
+}
+/* server down */
+@media (max-width: 280px){
+  .all-body{
+    display: none;
+  }
+  .server-down{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: red;
   }
 }

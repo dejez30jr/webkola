@@ -99,7 +99,6 @@ section .judul-prestasi {
   margin: 20px auto;
   background-color: #fff;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 /* identts end */
 .guru-sekolah{
@@ -1331,7 +1330,7 @@ footer{
     width: 100%;
   }
 }
-@media (max-width: 300px){
+@media (max-width: 301px){
   /* profil seklah */
  .profil-sekolah{
   padding-top: 20%;
@@ -1369,12 +1368,18 @@ footer{
  #popup-visimisi{
   display: flex;
  }
+ #visi-none{
+  display: none;
+ }
  /* fasilitas seklh */
  .fasilitas-sekolah{
   padding-top: 10%;
  }
  .fasilitas-jpgs{
   width: 100%;
+ }
+ #fasilitas-none{
+  display: flex;
  }
 }
 

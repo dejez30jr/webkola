@@ -267,14 +267,14 @@ margin: 3px;
   text-overflow: ellipsis;
 }
 .text-berita{
-    padding: 5px 5px 20px;
+    padding: 5px 5px 0px;
     gap: 1rem;
 }
 .tgl-berita{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 5px 5px;
+    justify-content: end;
+    padding: 5px 0px 0px;
+    margin-top: 10px;
 }
 .isi-next a{
     color: rgb(255, 255, 255);
@@ -1222,7 +1222,7 @@ footer{
   .judul-gmobile{
     width: 100%;
     text-align: center;
-    padding: 0px 10px 30px;
+    padding: 0px 10px 10px;
   }
   .cards-guru{
     padding: 5px;
@@ -1310,14 +1310,12 @@ footer{
     .tgl-berita{
         flex-wrap: wrap;
         font-size: 12px;
-        padding: 0;
-        margin-top: 10%;
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
     }
     .text-berita{
       padding-bottom: 0;
-    }
-    .tgl-berita{
-      margin-top: 40px;
     }
     .isi-next {
         min-width: 70%;
@@ -1350,12 +1348,16 @@ footer{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        box-shadow: 0 6px 10px rgb(200, 199, 199);
+        /* box-shadow: 0 6px 10px rgb(200, 199, 199); */
+        border-radius: 10px;
+        border: 1px solid rgb(200, 200, 200);
     }
     .detail-prestasi{
     }
     .tgl-prestasi{
         font-size: 15px;
+        display: flex;
+        padding-top: 20px;
     }
     .user-prestasi{
         font-size: 15px;

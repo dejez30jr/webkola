@@ -956,17 +956,6 @@ margin: 3px;
 .h2{
     padding: 10px;
 }
-@media (max-width: 700px){
-    .ketupat-jurusan{
-        display: none;
-    }
-    .jurusan-kolom{
-      display: none;
-    }
-    .jurusan{
-      display: flex;
-    }
-}
 @media (max-width: 999px){
   .ketupat-jurusan{
     display: flex;
@@ -1299,10 +1288,9 @@ footer{
     }
      .isi-berita{
         min-width: 40%;
-        min-height: 300px;
     }
     #title-berita{
-      font-size: 14px;
+      font-size: 17px;
     }
     .title-secend{
       font-size: 12px;
@@ -1378,13 +1366,16 @@ footer{
         width: 100%;
     }
     /* scetion6 */
-    .item-jurusan{
-        width: 90%;
-        text-align: center;
-        margin-top: 20px;
+    .jurusan-kolom{
+      min-width: 80%;
     }
-    .ribbon{
-        width: 100%;
+    .jurusan{
+      display: flex;
+    }
+    .item-kj{
+      min-width: 200px;
+      border-radius: 10px;
+      margin-top: 20px;
     }
     /* section7 */
     .item-kontak{

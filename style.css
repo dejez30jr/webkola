@@ -1366,6 +1366,9 @@ footer{
         width: 100%;
     }
     /* scetion6 */
+    .judul-jurusan{
+      margin-top: 80px;
+    }
     .jurusan-kolom{
       min-width: 80%;
     }

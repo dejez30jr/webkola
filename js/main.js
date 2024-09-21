@@ -1,4 +1,5 @@
 
+
 // nimasi ketikan nuri
 const text = "SMK NURUL IMAN JAKTIM";
 let index = 0;
@@ -18,6 +19,26 @@ function typeWriter() {
 // end nimasi ketikan nuri
 
 window.onload = typeWriter;
+
+// Hide navbar sidebar saat di klik
+
+document.addEventListener('DOMContentLoaded', function () {
+    const offcanvasLinks = document.querySelectorAll('.offcanvas-body .tutup-nav');
+    const offcanvasElement = document.getElementById('offcanvasNavbar');
+    const bsOffcanvas = new bootstrap.Offcanvas(offcanvasElement);
+
+    offcanvasLinks.forEach(link => {
+        link.addEventListener('click', function () {
+            const delay = 550;
+            setTimeout(() => {
+                bsOffcanvas.hide();
+            }, delay);
+        });
+    });
+});
+
+// end Hide navbar sidebar saat di klik
+
 // hover navbar start
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('.nav-item a');
@@ -41,7 +62,6 @@ window.onscroll = () => {
     });
 };
 // hover navbar end
-
 // popup
 document.querySelectorAll('.popklik').forEach(item => {
     item.addEventListener('click', function() {
@@ -50,4 +70,29 @@ document.querySelectorAll('.popklik').forEach(item => {
         popup.classList.toggle('on');
     });
 });
+
+
+// pop up identitas
+const openI= document.getElementById("open-identitas");
+const popupI= document.querySelector(".popup-identitas");
+const closeI= document.querySelector('.close-identitas')
+openI.addEventListener("click", function(){
+  popupI.style.display= "flex";
+});
+closeI.addEventListener("click", function(){
+  popupI.style.display= "none";
+});
+
+
 //pop end
+
+// slide pp guru bray
+function slideLeft() {
+    const container = document.querySelector('.card-container');
+    container.scrollBy({ left: -300, behavior: 'smooth' });
+  }
+  
+  function slideRight() {
+    const container = document.querySelector('.card-container');
+    container.scrollBy({ left: 300, behavior: 'smooth' });
+  }

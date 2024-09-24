@@ -38,7 +38,9 @@ section .judul-prestasi {
   border-bottom: 2px solid rgba(0, 0, 0, 0);
   transition: all 300ms;
 }
-
+#navli-none{
+  display: none;
+}
 .nav-item .nav-link:hover,
 .nav-item .nav-link.Aktif {
   color: green;
@@ -159,22 +161,50 @@ section .judul-prestasi {
 /* end */
 
 /* pp-guru */
-.guru-sekolah {
+.jdl-guru{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
-  min-width: 100%;
-  height: 100vh;
+  color: rgb(0, 0, 0);
+}
+#style-jdl{
+background-color: yellow;
+transform: translateY(-50px);
+padding: 10px;
+width: 40%;
+text-align: center;
+box-shadow: 0 6px 10px rgb(27, 26, 26);
+}
+.all-guru{
+  flex-direction: column;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-top: 8%;
+ padding: 10px;
+ border-top: 5px solid yellow;
+ border-bottom: 5px solid yellow;
+ background-color: green;
+}
+.guru-sekolah {
+  width: 90%;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
   position: relative;
   overflow: hidden;
+  padding: 10px;
 }
 .card-container {
   display: flex;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  width: 80%;
+  width: 100%;
 }
 
 .card-guru {
@@ -231,10 +261,15 @@ buttons {
 }
 
 /* fasilitas */
+section.fasilitas{
+  padding-top: 8%;
+}
+.judul-fasilitas{
+  text-align: center;
+  padding: 10px;
+}
 .fasilitas-sekolah {
-  padding: 20px 20px 0px;
   min-width: 100%;
-  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -254,8 +289,21 @@ buttons {
   margin: 3px;
 }
 
-.btn-fasilitas {
-  display: none;
+.btn-fasilitas{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding: 5px 15px 5px;
+  margin-top: 10px;
+  font-size: 23px;
+}
+.btn-fasilitas a{
+ padding: 5px;
+  color: black;
+  border: 1px solid rgb(121, 121, 121);
+  text-decoration: none;
 }
 
 /* visimisi */
@@ -1243,70 +1291,30 @@ footer {
     display: none;
   }
   /* pp-guru */
-  .guru-sekolah {
-    padding-top: 20%;
-    min-width: 100%;
-    height: auto;
+  #navli-none{
     display: flex;
-    flex-direction: column;
+  }
+  #style-jdl{
+    width: 80%;
+    border-radius: 0px;
+  }
+  .all-guru{
+    margin-top: 30%;
+  }
+  .guru-sekolah {
+    width: 100%;
+    display: flex;
     justify-content: center;
-    align-items: center;
     gap: 2rem;
   }
-
   .card-container {
-    background-color: #008bf8;
-    overflow: hidden;
-    flex-direction: column;
-    display: none;
-    width: 100%;
-  }
-
-  .card-guru {
-    width: 200px;
-  }
-
-  buttons {
-    display: none;
-  }
-
-  .isi-gmobile {
     overflow: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .all2-card {
-    /* background-color: #008bf8; */
-    min-width: 50%;
-  }
-
-  .judul-gmobile {
     width: 100%;
-    text-align: center;
-    padding: 0px 10px 10px;
+    display: flex;
   }
-
-  .cards-guru {
-    padding: 5px;
-    border: 1px solid rgb(205, 205, 205);
-    width: auto;
-    margin: 10px;
-    text-align: center;
-    background-color: rgb(27, 109, 32);
-    color: white;
-  }
-
-  #guru-none {
+  buttons{
     display: none;
   }
-
-  .img-gmobile {
-    width: 100%;
-    height: 200px;
-  }
-
   /* fasilitas */
   .fasilitas-sekolah {
     min-width: 100%;
@@ -1321,11 +1329,6 @@ footer {
     width: 90%;
     height: 15%;
   }
-
-  #fasilitas-none {
-    display: none;
-  }
-
   .btn-fasilitas {
     display: flex;
   }
@@ -1591,15 +1594,6 @@ footer {
     align-items: center;
     height: 100vh;
   }
-
-  /* pp guru */
-  .guru-sekolah {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 1300px;
-  }
-
   /* visimisi */
   .visimisi-sekolah {
     padding-top: 10%;
@@ -1616,19 +1610,6 @@ footer {
 
   #visi-none {
     display: none;
-  }
-
-  /* fasilitas seklh */
-  .fasilitas-sekolah {
-    padding-top: 10%;
-  }
-
-  .fasilitas-jpgs {
-    width: 100%;
-  }
-
-  #fasilitas-none {
-    display: flex;
   }
 }
 

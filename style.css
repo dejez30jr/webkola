@@ -185,8 +185,8 @@ box-shadow: 0 6px 10px rgb(27, 26, 26);
  align-items: center;
  margin-top: 8%;
  padding: 10px;
- border-top: 5px solid yellow;
- border-bottom: 5px solid yellow;
+ border-top: 7spx solid yellow;
+ border-bottom: 7spx solid yellow;
  background-color: green;
 }
 .guru-sekolah {
@@ -195,10 +195,8 @@ box-shadow: 0 6px 10px rgb(27, 26, 26);
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
   position: relative;
   overflow: hidden;
-  padding: 10px;
 }
 .card-container {
   display: flex;
@@ -208,7 +206,7 @@ box-shadow: 0 6px 10px rgb(27, 26, 26);
 }
 
 .card-guru {
-  min-width: 300px;
+  min-width: 250px;
   margin: 10px;
   text-align: center;
   background-color: #f0f0f0;
@@ -250,7 +248,10 @@ buttons {
   .card-container {
     width: 100%;
   }
-
+  .img-guru{
+    height: 300px;
+    width: 100%;
+  }
   .card-guru {
     min-width: 90%;
   }

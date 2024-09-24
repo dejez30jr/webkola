@@ -185,8 +185,8 @@ box-shadow: 0 6px 10px rgb(27, 26, 26);
  align-items: center;
  margin-top: 8%;
  padding: 10px;
- border-top: 7spx solid yellow;
- border-bottom: 7spx solid yellow;
+ border-top: 7px solid yellow;
+ border-bottom: 7px solid yellow;
  background-color: green;
 }
 .guru-sekolah {
@@ -1332,6 +1332,7 @@ footer {
   }
   .btn-fasilitas {
     display: flex;
+    font-size: 15px;
   }
 
   .btn-fasilitas a {

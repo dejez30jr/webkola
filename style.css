@@ -64,6 +64,18 @@ section .judul-prestasi {
   background-position: center;
   border-image: fill 0 linear-gradient(#0003, #0003);
   background-image: url(aset/page.jpg);
+  animation: slide 10s linear infinite;
+}
+@keyframes slide {
+  0%{
+    background-image: url(aset/g-3.jpg);
+  } 
+  30%{
+    background-image: url(aset/g-5.jpg);
+  }
+  60%{
+    background-image: url(aset/g-1.jpg);
+  }
 }
 
 /* section 2 */
@@ -264,8 +276,12 @@ section.fasilitas{
   padding-top: 8%;
 }
 .judul-fasilitas{
-  text-align: center;
-  padding: 10px;
+  padding: 10px 10px 0px;
+  display: flex;
+  justify-content: center;
+}
+.isijdl-fasilitas{
+  width: 95%;
 }
 .fasilitas-sekolah {
   min-width: 100%;
@@ -349,11 +365,11 @@ section.fasilitas{
 
 /* section 3 */
 .judul-berita {
-  width: 100%;
+  flex-direction: column;
+  width: 80%;
   display: flex;
-  justify-content: center;
   color: white;
-  padding: 20px;
+  padding: 20px 20px 0px;
 }
 
 .berita {
@@ -447,12 +463,10 @@ section.fasilitas{
 /* popup Berita end */
 /* section4 */
 .judul-prestasi {
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-top: 20px;
   margin-top: 20px;
   width: 100%;
+  flex-direction: column;
 }
 
 .prestasi {
@@ -470,14 +484,8 @@ section.fasilitas{
 }
 
 .isi-prestasi {
-  width: 100%;
-  gap: 1rem;
-  margin: 10px;
-  align-items: center;
-  display: flex;
-  overflow: hidden;
-  border: 2px solid rgb(216, 216, 216);
-  /* box-shadow: 0 6px 10px rgb(41, 41, 41); */
+ width: 80%;
+ flex-direction: column;
 }
 
 .detail-prestasi {
@@ -499,14 +507,16 @@ section.fasilitas{
 /* section5 (eskul) */
 .judul-eskul {
   width: 100%;
-  text-align: center;
+  display: flex;
   margin-top: 30px;
-  padding: 20px 10px 20px;
+  justify-content: center;
+  padding: 20px 10px 0px;
 }
-
+.isijdl-eskul{
+width: 80%;
+}
 .eskul {
   display: flex;
-  padding: 10px;
   width: 100%;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -996,22 +1006,23 @@ section.fasilitas{
 }
 
 /* section6 */
-.judul-jurusan {
+section.JURUSAN{
   display: flex;
   justify-content: center;
+  padding-top: 10%;
+}
+.judul-jurusan {
   color: rgb(0, 0, 0);
   padding: 10px;
-  margin-top: 8%;
 }
 
 .ketupat-jurusan {
-  width: 100%;
+  width: 80%;
   display: flex;
-  justify-content: space-evenly;
+  gap: 10px;
   flex-wrap: wrap;
   padding: 5% 10px 10%;
 }
-
 .item-kj {
   background-color: green;
   color: white;
@@ -1025,7 +1036,6 @@ section.fasilitas{
   margin: 10px;
   transition: 1s;
 }
-
 .item-kj:hover {
   transform: scale(1.1);
   box-shadow: 0 6px 10px rgb(42, 41, 41);
@@ -1090,11 +1100,14 @@ section.fasilitas{
 
 /* scetion7 */
 .judul-kontak {
-  text-align: center;
   padding: 10px;
+  display: flex;
+  justify-content: center;
   margin-top: 90px;
 }
-
+.isijdl-kontak{
+  width: 83%;
+}
 .kontak {
   width: 100%;
   display: flex;
@@ -1324,11 +1337,11 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
   }
 
   .fasilitas-jpgs {
-    width: 90%;
+    width: 95%;
     height: 15%;
   }
   .btn-fasilitas {
@@ -1377,22 +1390,22 @@ footer {
   }
 
   /* Section3 */
+  .judul-berita{
+    padding: 0;
+    width: 85%;
+  }
   .berita {
     padding: 0;
   }
-
   .isi-berita {
     min-width: 40%;
   }
-
   #title-berita {
     font-size: 17px;
   }
-
   .title-secend {
     font-size: 12px;
   }
-
   .tgl-berita {
     flex-wrap: wrap;
     font-size: 12px;
@@ -1400,15 +1413,12 @@ footer {
     display: flex;
     align-items: center;
   }
-
   .text-berita {
     padding-bottom: 0;
   }
-
   .isi-next {
     min-width: 70%;
   }
-
   .isi-next a {
     color: white;
   }
@@ -1427,29 +1437,13 @@ footer {
     overflow: auto;
     flex-wrap: wrap;
   }
-
-  .card-prestasi {
-    flex-direction: row;
-    width: auto;
+  .isi-prestasi{
+    width: 90%;
   }
-
   .prestasi-jpg {
     width: 100%;
     height: 200px;
   }
-
-  .isi-prestasi {
-    min-width: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    /* box-shadow: 0 6px 10px rgb(200, 199, 199); */
-    border-radius: 10px;
-    border: 1px solid rgb(200, 200, 200);
-  }
-
-  .detail-prestasi {}
-
   .tgl-prestasi {
     font-size: 15px;
     display: flex;
@@ -1461,12 +1455,12 @@ footer {
   }
 
   /* sevtion5 */
-  .eskul {
-    display: flex;
-    overflow-x: scroll;
-    white-space: nowrap;
+  .judul-eskul{
+    padding: 0px;
   }
-
+  .isijdl-eskul{
+    width: 88%;
+  }
   .item-eskul1,
   .item-eskul2,
   .item-eskul3,
@@ -1484,24 +1478,23 @@ footer {
     flex-wrap: wrap;
     width: 100%;
   }
-
   /* scetion6 */
-  .judul-jurusan {
-    margin-top: 80px;
+  .judul-jurusan{
+    padding: 0;
   }
-
+  .ketupat-jurusan{
+    min-width: 100%;
+  }
   .jurusan-kolom {
     min-width: 80%;
   }
-
   .jurusan {
     display: flex;
   }
-
   .item-kj {
     min-width: 200px;
     border-radius: 10px;
-    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   /* section7 */
@@ -1509,7 +1502,9 @@ footer {
     width: 90%;
     margin: auto;
   }
-
+  .isijdl-kontak{
+    width: 90%;
+  }
   .text-kontak {
     width: 90%;
   }

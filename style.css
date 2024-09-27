@@ -45,7 +45,23 @@ section .judul-prestasi {
   color: green;
   border-bottom: 4px solid green;
 }
-
+/* navbar versi hp */
+.headers{
+  z-index: 1000;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+.box-headers{
+  display: flex;
+  gap: 3rem;
+  place-content: center;
+}
+.icon-header{
+  text-align: center;
+}
 /* aktif hover navbar end */
 
 /* section 1 */
@@ -114,27 +130,25 @@ section .judul-prestasi {
   gap: 2rem;
 }
 /* untuk dekstop */
-@media(min-width: 950px){
+@media(min-width: 700px){
   .judul-identitas{
     text-align: center;
     padding: 5px 10px 20px;
   }
   .isi-identitas {
-    width: 900px;
+    width: 50%;
     height: auto;
     margin: 20px auto;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
+    border: 1px solid rgb(229, 229, 229);
     border-radius: 10px;
     padding: 20px;
   }
   .open-identitas{
     padding: 10px;
-    width: 30%;
     cursor: pointer;
-    background-color: black;
     color: white;
     border-radius: 10px;
-    text-align: center;
   }
   .close-identitas{
     display: flex;
@@ -150,7 +164,7 @@ section .judul-prestasi {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 10000;
     background-color: rgba(0, 0, 0, 0.5);
   }
   .isipopup-identitas::-webkit-scrollbar{
@@ -158,10 +172,12 @@ section .judul-prestasi {
   }
   .isipopup-identitas{
     cursor: pointer;
-    background-color: white;
+    background-color: green;
+    color: white;
+    border: 2px solid yellow;
     padding: 10px 15px 10px;
-    width: 40%;
-    height: 600px;
+    width: 50%;
+    height: 700px;
     border-radius: 10px;
     overflow: auto;
   }
@@ -301,6 +317,11 @@ section.fasilitas{
   height: 300px;
   background-size: cover;
   padding: 10px;
+  transition: 2s;
+}
+.fasilitas-card:hover{
+  transform: scale(0.9);
+  border: 5px solid yellow;
 }
 .fasilitas-jpgs {
   width: 500px;
@@ -324,7 +345,6 @@ section.fasilitas{
   border: 1px solid rgb(121, 121, 121);
   text-decoration: none;
 }
-
 /* visimisi */
 .visimisi-sekolah {
   min-width: 100%;
@@ -521,6 +541,7 @@ section.fasilitas{
   width: 100%;
   flex-wrap: wrap;
   justify-content: space-around;
+  background-size: cover;
 }
 
 .eskul::-webkit-scrollbar {

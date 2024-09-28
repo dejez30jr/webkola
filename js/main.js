@@ -71,6 +71,15 @@ document.querySelectorAll('.popklik').forEach(item => {
     });
 });
 
+document.querySelectorAll('.popupbox_js').forEach(item => {
+    item.addEventListener('click', function() {
+        item.classList.remove('on');
+        if (!item.classList.contains('on')) {
+            document.getElementById('Jurusan').scrollIntoView();
+        }
+    });
+});
+// popup End
 
 // pop up identitas
 const openI= document.getElementById("open-identitas");

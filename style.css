@@ -186,107 +186,43 @@ section .judul-prestasi {
   }
 }
 /* end */
-
-/* pp-guru */
+/* pp-guru2 */
+.all-guru{
+padding: 10% 0px 10%;
+cursor: pointer;
+}
 .jdl-guru{
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  color: rgb(0, 0, 0);
-}
-#style-jdl{
-background-color: yellow;
-transform: translateY(-50px);
-padding: 10px;
-width: 40%;
-text-align: center;
-box-shadow: 0 6px 10px rgb(27, 26, 26);
-}
-.all-guru{
-flex-direction: column;
- width: 100%;
- display: flex;
- justify-content: center;
- align-items: center;
- margin-top: 8%;
- padding: 10px;
- border-top: 7px solid yellow;
- border-bottom: 7px solid yellow;
- background-color: green;
-}
-.guru-sekolah {
-  width: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-}
-.card-container {
-  display: flex;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  width: 100%;
-}
-
-.card-guru {
-  min-width: 250px;
-  margin: 10px;
   text-align: center;
-  background-color: #f0f0f0;
+  padding: 10px;
+}
+.box-guru{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding-bottom: 3%;
+}
+.item-guru{
+  width: 30%;
+  height: 150px;
   border-radius: 10px;
+  border: 2px solid rgb(234, 234, 234);
+  background-color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.img-guru{
+  height: 100%;
+  width: 130px;
+  border-radius: 10px 0px 0px 10px;
+}
+.btn-guru{
+  text-align: center;
   padding: 10px;
 }
-
-.img-guru {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-
-buttons {
-  background-color: #333;
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.prev-slide,
-.next-slide {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.prev-slide {
-  left: 10px;
-}
-
-.next-slide {
-  right: 10px;
-}
-
-@media (max-width: 768px) {
-  .card-container {
-    width: 100%;
-  }
-  .img-guru{
-    height: 200px;
-    width: 100%;
-  }
-  .card-guru {
-    min-width: 60%;
-  }
-}
-
-.isi-gmobile {
-  display: none;
-}
-
 /* fasilitas */
 section.fasilitas{
   padding-top: 8%;
@@ -1064,7 +1000,6 @@ section.JURUSAN{
   transform: scale(1.1);
   box-shadow: 0 6px 10px rgb(42, 41, 41);
 }
-
 #p {
   background-image: url(aset/ketupat.png);
   background-size: cover;
@@ -1074,10 +1009,62 @@ section.JURUSAN{
   margin-left: -29px;
   transform: rotate(45deg);
 }
-
 .h2 {
   padding: 10px;
 }
+
+/* popup Jurusan */
+.popupbox_js {
+  width: 100%;
+  position: fixed;
+  top: 49.9%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  background-image: url(aset/page.jpg);
+  background-size: cover;
+  z-index: 10000;
+  overflow-y: auto;
+  height: 100%;
+  padding: 0em 0.1px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+.popup_js h1 {
+  padding-top: 15px;
+}
+.popup_js {
+  width:90%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  border: 5px solid yellow;
+}
+.popupbox_js.off{
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+.popupbox_js.on {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+.img-popup-jurusan{
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  overflow: auto;
+}
+.popup_js img {
+  width: 30%;
+  height: 30%;
+}
+/* popup Jurusan End */
+
 
 @media (max-width: 999px) {
   .ketupat-jurusan {
@@ -1327,29 +1314,24 @@ footer {
   #navli-none{
     display: flex;
   }
-  #style-jdl{
-    width: 80%;
-    border-radius: 0px;
+  .img-guru{
+    height: 100%;
+    width: 130px;
+    border-radius: 10px 0px 0px 10px;
   }
   .all-guru{
-    margin-top: 30%;
+    overflow: none;
+    padding-top: 20%;
   }
-  #cg-none{
-    display: none;
-  }
-  .guru-sekolah {
-    width: 100%;
+  .box-guru{
     display: flex;
-    justify-content: center;
-    gap: 2rem;
-  }
-  .card-container {
+    flex-wrap: nowrap;
+    justify-content: start;
     overflow: auto;
-    width: 100%;
-    display: flex;
+    padding: 10px;
   }
-  buttons{
-    display: none;
+  .item-guru{
+    min-width: 80%;
   }
   /* fasilitas */
   .judul-fasilitas{
@@ -1544,7 +1526,25 @@ footer {
     border-radius: 10px;
     margin-bottom: 20px;
   }
-
+  .popupbox_js{
+    align-items: center;
+  }
+  .popup_js{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    border: 3px solid green;
+  }
+  .img-popup-jurusan{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    overflow: auto;
+  }
+  .popup_js img {
+    width: 70%;
+    height: 40%;
+  }
   /* section7 */
   .item-kontak {
     width: 90%;

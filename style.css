@@ -199,6 +199,9 @@ cursor: pointer;
 .jdl-guru b{
   font-size: 35px;
 }
+.judulguru-1{
+  display: none;
+}
 .box-guru{
   width: 100%;
   display: flex;
@@ -232,11 +235,13 @@ section.fasilitas{
 }
 .judul-fasilitas{
   padding: 10px 10px 0px;
-  flex-direction: column;
   text-align: center;
 }
 .judul-fasilitas b{
   font-size: 35px;
+}
+.judulfasilitas-1{
+  display: none;
 }
 .fasilitas-sekolah {
   min-width: 100%;
@@ -434,8 +439,10 @@ section.fasilitas{
   padding-top: 20px;
   margin-top: 20px;
   width: 100%;
-  flex-direction: column;
   text-align: center;
+}
+.judulprestasi-1{
+  display: none;
 }
 .judul-prestasi b {
  font-size: 35px;
@@ -1129,6 +1136,9 @@ section.JURUSAN{
   text-align: center;
   margin-top: 90px;
 }
+.judul-kontak b{
+  font-size: 35px;
+}
 .kontak {
   width: 100%;
   display: flex;
@@ -1325,8 +1335,21 @@ footer {
   }
   /* pp-guru */
   .jdl-guru{
-    text-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 10px 10px 0px;
+    margin-bottom: 10px;
+  }
+  .judulguru-2{
+    text-align: start;
+  }
+  .judulguru-1{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
   }
   .jdl-guru b{
     font-size: 20px;
@@ -1356,7 +1379,17 @@ footer {
   /* fasilitas */
   .judul-fasilitas{
     margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .judulfasilitas-2{
     text-align: start;
+  }
+  .judulfasilitas-1{
+    display: flex;
+    padding: 5px;
+    font-size: 20px;
   }
   .judul-fasilitas b{
     font-size: 20px;
@@ -1479,12 +1512,22 @@ footer {
   /* section4 */
   .judul-prestasi {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .judulprestasi-2{
     text-align: start;
+  }
+  .judulprestasi-1{
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
   }
   .judul-prestasi b{
     font-size: 25px;
   }
-
   .prestasi {
     justify-content: space-around;
     overflow: auto;
@@ -1585,6 +1628,9 @@ footer {
     height: 40%;
   }
   /* section7 */
+  .judul-kontak b {
+    font-size: 20px;
+  }
   .item-kontak {
     width: 90%;
     margin: auto;

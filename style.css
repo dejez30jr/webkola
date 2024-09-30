@@ -196,6 +196,9 @@ cursor: pointer;
   text-align: center;
   padding: 10px;
 }
+.jdl-guru b{
+  font-size: 35px;
+}
 .box-guru{
   width: 100%;
   display: flex;
@@ -231,6 +234,9 @@ section.fasilitas{
   padding: 10px 10px 0px;
   flex-direction: column;
   text-align: center;
+}
+.judul-fasilitas b{
+  font-size: 35px;
 }
 .fasilitas-sekolah {
   min-width: 100%;
@@ -331,7 +337,9 @@ section.fasilitas{
   text-align: center;
   padding: 20px 20px 0px;
 }
-
+.judul-berita b{
+  font-size: 40px;
+}
 .berita {
   width: 100%;
   height: auto;
@@ -429,7 +437,9 @@ section.fasilitas{
   flex-direction: column;
   text-align: center;
 }
-
+.judul-prestasi b {
+ font-size: 35px;
+}
 .prestasi {
   width: 100%;
   padding: 10px;
@@ -468,9 +478,12 @@ section.fasilitas{
 .judul-eskul {
   width: 100%;
   flex-direction: column;
-  text-align: center;
   margin-top: 30px;
+  text-align: center;
   padding: 20px 10px 0px;
+}
+.judul-eskul b{
+  font-size: 35px;
 }
 .eskul {
   display: flex;
@@ -1311,6 +1324,13 @@ footer {
     display: none;
   }
   /* pp-guru */
+  .jdl-guru{
+    text-align: start;
+    padding: 10px 10px 0px;
+  }
+  .jdl-guru b{
+    font-size: 20px;
+  }
   #navli-none{
     display: flex;
   }
@@ -1328,7 +1348,7 @@ footer {
     flex-wrap: nowrap;
     justify-content: start;
     overflow: auto;
-    padding: 10px;
+    padding: 0px 10px 10px;
   }
   .item-guru{
     min-width: 80%;
@@ -1336,6 +1356,10 @@ footer {
   /* fasilitas */
   .judul-fasilitas{
     margin-top: 10%;
+    text-align: start;
+  }
+  .judul-fasilitas b{
+    font-size: 20px;
   }
   .fasilitas-sekolah {
     min-width: 100%;
@@ -1414,6 +1438,10 @@ footer {
   .judul-berita{
     padding: 0;
     width: 85%;
+    text-align: start;
+  }
+  .judul-berita b{
+    font-size: 20px;
   }
   .berita {
     padding: 0;
@@ -1451,6 +1479,10 @@ footer {
   /* section4 */
   .judul-prestasi {
     width: 100%;
+    text-align: start;
+  }
+  .judul-prestasi b{
+    font-size: 25px;
   }
 
   .prestasi {
@@ -1477,7 +1509,13 @@ footer {
 
   /* sevtion5 */
   .judul-eskul{
-    padding: 0px;
+    padding-left: 10px;
+    font-size: 15px;
+    display: flex;
+    text-align: start;
+  }
+  .judul-eskul b{
+    font-size: 25px;
   }
   .item-eskul1,
   .item-eskul2,
@@ -1493,6 +1531,7 @@ footer {
     justify-content: start;
     display: flex;
     margin-bottom: 10%;
+    padding-left: 10px;
   }
   .card-eskul {
     display: flex;
@@ -1533,7 +1572,7 @@ footer {
     height: 100%;
     width: 100%;
     overflow: auto;
-    border: 3px solid green;
+    border: 3px solid white;
   }
   .img-popup-jurusan{
     width: 100%;

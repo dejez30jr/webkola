@@ -1471,6 +1471,9 @@ footer {
     width: 85%;
     text-align: start;
   }
+  .judul-berita p{
+    font-size: 12px;
+  }
   .judulberita-2{
     font-size: 20px;
     padding: 5px;

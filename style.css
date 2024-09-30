@@ -342,6 +342,9 @@ section.fasilitas{
   text-align: center;
   padding: 20px 20px 0px;
 }
+.judulberita-2{
+  display: none;
+}
 .judul-berita b{
   font-size: 40px;
 }
@@ -468,26 +471,15 @@ section.fasilitas{
 .detail-prestasi {
   padding: 10px;
 }
-
-.i-prestasi {}
-
-.tgl-prestasi {
-  font-size: 20px;
-  display: flex;
-  gap: 10px;
-}
-
-.user-prestasi {
-  font-size: 20px;
-}
-
 /* section5 (eskul) */
 .judul-eskul {
   width: 100%;
-  flex-direction: column;
   margin-top: 30px;
   text-align: center;
   padding: 20px 10px 0px;
+}
+.juduleskul-2{
+  display: none;
 }
 .judul-eskul b{
   font-size: 35px;
@@ -1341,6 +1333,9 @@ footer {
     padding: 10px 10px 0px;
     margin-bottom: 10px;
   }
+  .jdl-guru p{
+    font-size: 12px;
+  }
   .judulguru-2{
     text-align: start;
   }
@@ -1348,7 +1343,7 @@ footer {
     display: flex;
     align-items: center;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 19px;
     padding: 5px;
   }
   .jdl-guru b{
@@ -1470,8 +1465,17 @@ footer {
   /* Section3 */
   .judul-berita{
     padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 85%;
     text-align: start;
+  }
+  .judulberita-2{
+    font-size: 20px;
+    padding: 5px;
+    font-weight: bold;
+    display: flex;
   }
   .judul-berita b{
     font-size: 20px;
@@ -1516,6 +1520,9 @@ footer {
     justify-content: space-between;
     align-items: center;
   }
+  .judul-prestasi p{
+    font-size: 12px;
+  }
   .judulprestasi-2{
     text-align: start;
   }
@@ -1555,7 +1562,19 @@ footer {
     padding-left: 10px;
     font-size: 15px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .judul-eskul p{
+    font-size: 12px;
+  }
+  .juduleskul-1{
     text-align: start;
+  }
+  .juduleskul-2{
+    display: flex;
+    font-size: 20px;
+    padding: 5px;
   }
   .judul-eskul b{
     font-size: 25px;

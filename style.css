@@ -109,6 +109,7 @@ section .judul-prestasi {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  font-family: "Kanit", sans-serif;
 }
 
 .sejarah-sekolah {
@@ -118,6 +119,7 @@ section .judul-prestasi {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  font-family: "Kanit", sans-serif;
 }
 
 /* identts */
@@ -128,6 +130,7 @@ section .judul-prestasi {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  font-family: "Kanit", sans-serif;
 }
 /* untuk dekstop */
 @media(min-width: 700px){
@@ -299,6 +302,7 @@ section.fasilitas{
   align-items: center;
   justify-content: center;
   background-size: cover;
+  font-family: "Kanit", sans-serif;
 }
 
 .isi-visimisi1 {

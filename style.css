@@ -223,6 +223,9 @@ cursor: pointer;
   align-items: center;
   gap: 10px;
 }
+.item-guru:hover{
+  background-color: rgb(206, 206, 206);
+}
 .img-guru{
   height: 100%;
   width: 130px;
@@ -231,6 +234,7 @@ cursor: pointer;
 .btn-guru{
   text-align: center;
   padding: 10px;
+  display: block;
 }
 /* fasilitas */
 section.fasilitas{
@@ -1057,7 +1061,9 @@ section.JURUSAN{
   padding: 20px;
   background-color: white;
   border-radius: 8px;
+  font-family: "Kanit", sans-serif;
   border: 5px solid yellow;
+  cursor: pointer;
 }
 .popupbox_js.off{
   visibility: hidden;
@@ -1363,17 +1369,20 @@ footer {
   }
   .all-guru{
     overflow: none;
-    padding-top: 20%;
+    padding: 30px 0px 0px;
   }
   .box-guru{
     display: flex;
     flex-wrap: nowrap;
     justify-content: start;
     overflow: auto;
-    padding: 0px 10px 10px;
+    padding: 0px 10px 0px;
   }
   .item-guru{
     min-width: 80%;
+  }
+  .btn-guru{
+    display: none;
   }
   /* fasilitas */
   .judul-fasilitas{
@@ -1523,6 +1532,7 @@ footer {
   /* section4 */
   .judul-prestasi {
     width: 100%;
+    margin-top: 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1599,8 +1609,7 @@ footer {
   .eskul{
     justify-content: start;
     display: flex;
-    margin-bottom: 10%;
-    padding-left: 10px;
+    padding: 0px;
   }
   .card-eskul {
     display: flex;

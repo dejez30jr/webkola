@@ -5,6 +5,7 @@ html {
   margin: 0;
   text-decoration: none;
   scroll-behavior: smooth;
+  font-family: "Kanit", sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -514,7 +515,7 @@ section.fasilitas{
 .item-eskul1 {
   width: 300px;
   margin: 10px;
-  height: 250px;
+  height: 200px;
   border-radius: 20px;
   background-image: url(https://th.bing.com/th/id/OIP.XTktgAVtgyrfjUuQbn_YdAAAAA?rs=1&pid=ImgDetMain);
   background-size: cover;
@@ -573,7 +574,7 @@ section.fasilitas{
 .item-eskul2 {
   width: 300px;
   margin: 10px;
-  height: 250px;
+  height: 200px;
   border-radius: 20px;
   background-image: url(https://th.bing.com/th/id/OIP.9TJyxzBI2pc7vQ2WB3i68QHaHa?w=1480&h=1480&rs=1&pid=ImgDetMain);
   background-size: cover;
@@ -632,7 +633,7 @@ section.fasilitas{
 .item-eskul3 {
   width: 300px;
   margin: 10px;
-  height: 250px;
+  height: 200px;
   border-radius: 20px;
   background-image: url(https://th.bing.com/th/id/R.bcd16e4dbe54b25c40169d26b8102334?rik=n4VXMkYXwB8pXA&riu=http%3a%2f%2fsmpn1sgs.sch.id%2fpublic%2fimages%2fartikel%2f08-2017%2f28201707-700x700-pmr.jpg&ehk=Ele3Qt80THVaCL%2f3GhMa4Qf8D%2fdPTTECTmnxtEQzZh0%3d&risl=&pid=ImgRaw&r=0);
   background-size: cover;
@@ -691,7 +692,7 @@ section.fasilitas{
 .item-eskul4 {
   width: 300px;
   margin: 10px;
-  height: 250px;
+  height: 200px;
   border-radius: 20px;
   background-image: url(aset/db.jpg);
   background-size: cover;
@@ -751,7 +752,7 @@ section.fasilitas{
 .item-eskul5 {
   width: 300px;
   margin: 10px;
-  height: 250px;
+  height: 200px;
   border-radius: 20px;
   background-image: url(https://th.bing.com/th/id/OIP.8iLB2-z5m-ES8iQZOT1HuAHaFw?rs=1&pid=ImgDetMain);
   background-size: cover;
@@ -811,7 +812,7 @@ section.fasilitas{
 .item-eskul7 {
   width: 300px;
   margin: 10px;
-  height: 250px;
+  height: 200px;
   border-radius: 20px;
   background-image: url(https://img.freepik.com/premium-vector/traditional-dancer-profession_180868-71.jpg?w=1380);
   background-size: cover;
@@ -870,7 +871,7 @@ section.fasilitas{
 .item-eskul8 {
   width: 300px;
   margin: 10px;
-  height: 250px;
+  height: 200px;
   border-radius: 20px;
   background-image: url(https://th.bing.com/th/id/OIP.dGwvhS6f0EEpxtT-7ZJivwHaEo?rs=1&pid=ImgDetMain);
   background-size: cover;
@@ -928,7 +929,7 @@ section.fasilitas{
 .item-eskul9 {
   width: 300px;
   margin: 10px;
-  height: 250px;
+  height: 200px;
   border-radius: 20px;
   background-image: url(https://img.freepik.com/free-vector/flat-badminton-player-with-racket_52683-12375.jpg?t=st=1718353081~exp=1718356681~hmac=2c003d4322b280c5e76f1d85ce534079ad5d5e8ce20793ef7bc5880422dbdb36);
   background-size: cover;
@@ -1587,6 +1588,7 @@ footer {
   }
   .juduleskul-1{
     text-align: start;
+    padding-left: 10px;
   }
   .juduleskul-2{
     display: flex;
@@ -1605,6 +1607,7 @@ footer {
   .item-eskul8,
   .item-eskul9 {
     min-width: 60%;
+    height: 150px;
   }
   .eskul{
     justify-content: start;

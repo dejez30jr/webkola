@@ -1,569 +1,1805 @@
+*,
 body,
 html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: "Kanit", sans-serif;
 }
 
-body::-webkit-scrollbar{
-    display: none;
+body::-webkit-scrollbar {
+  display: none;
+}
+/* server down  apdet*/
+.server-down {
+  display: none;
 }
 
-header {
-    justify-content: center;
-    display: flex;
-    width: 100%;
-}
+/* aktif & hover navbar :D */
 
-nav {
-    background-color: rgb(255, 255, 255);
-    width: 40%;
-    border-radius: 20px;
-    padding: 10px;
-}
-
-header.navbar {
-    width: 100%;
-    margin: auto;
-    position: fixed;
-    margin-top: 10px;
-    border-radius: 20px;
-    left: 0;
-    padding: 10px 0;
-    color: rgb(0, 0, 0);
-    transition: top 0.5s;
-    z-index: 1000;
-}
-
-header.navbar nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-header.navbar nav ul li {
-    margin: 0 15px;
-    text-align: center;
-    transition: 1s;
-}
-
-header.navbar nav ul li a {
-    color: inherit;
-    text-decoration: none;
-    font-size: 18px;
-}
 section {
-    padding: 100px 20px;
+  padding-top: 0.5em;
 }
-.home1{
-    gap: 2rem;
-    flex-wrap: wrap;
+
+section .judul-eskul {
+  padding-top: 5rem;
+}
+
+section .judul-berita {
+  padding-top: 7rem;
+}
+
+section .judul-prestasi {
+  padding-top: 6rem;
+}
+
+.navbar a {
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  transition: all 300ms;
+}
+#navli-none{
+  display: none;
+}
+.nav-item .nav-link:hover,
+.nav-item .nav-link.Aktif {
+  color: green;
+  border-bottom: 4px solid green;
+}
+/* navbar versi hp */
+.headers{
+  z-index: 1000;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+.box-headers{
+  display: flex;
+  gap: 3rem;
+  place-content: center;
+}
+.icon-header{
+  text-align: center;
+}
+/* aktif hover navbar end */
+
+/* section 1 */
+#none {
+  font-family: "Oswald", sans-serif;
+}
+
+.containers {
+  min-width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  border-image: fill 0 linear-gradient(#0003, #0003);
+  background-image: url(aset/page.jpg);
+  animation: slide 10s linear infinite;
+}
+@keyframes slide {
+  0%{
+    background-image: url(aset/g-3.jpg);
+  } 
+  30%{
+    background-image: url(aset/g-5.jpg);
+  }
+  60%{
+    background-image: url(aset/g-1.jpg);
+  }
+}
+
+/* section 2 */
+.sambutan {
+  display: flex;
+  overflow: hidden;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1600' height='1000' preserveAspectRatio='none' viewBox='0 0 1600 1000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1081%26quot%3b)' fill='none'%3e%3cpath d='M 0%2c412 C 160%2c455.2 480%2c623.2 800%2c628 C 1120%2c632.8 1440%2c474.4 1600%2c436L1600 1000L0 1000z' fill='rgba(32%2c 94%2c 18%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1081'%3e%3crect width='1600' height='1000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+
+/* (new apdet) */
+.profil-sekolah {
+  min-width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-family: "Kanit", sans-serif;
+}
+
+.sejarah-sekolah {
+  min-width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-family: "Kanit", sans-serif;
+}
+
+/* identts */
+.identitas-sekolah {
+  min-width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-family: "Kanit", sans-serif;
+}
+/* untuk dekstop */
+@media(min-width: 700px){
+  .judul-identitas{
+    text-align: center;
+    padding: 5px 10px 20px;
+  }
+  .isi-identitas {
+    width: 50%;
+    height: auto;
+    margin: 20px auto;
+    background-color: white;
+    border: 1px solid rgb(229, 229, 229);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .open-identitas{
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+  }
+  .close-identitas{
     display: flex;
+    justify-content: end;
+    font-size: 30px;
+  }
+  .popup-identitas{
+    width: 100%;
+    display: none;
+    height: 100%;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .isipopup-identitas::-webkit-scrollbar{
+    display: none;
+  }
+  .isipopup-identitas{
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    border: 2px solid yellow;
+    padding: 10px 15px 10px;
+    width: 50%;
+    height: 550px;
+    border-radius: 10px;
+    overflow: auto;
+  }
+  #isi1-inone{
+    display: none;
+  }
+}
+/* end */
+/* pp-guru2 */
+.all-guru{
+padding: 10% 0px 10%;
+cursor: pointer;
+}
+.jdl-guru{
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+.jdl-guru b{
+  font-size: 35px;
+}
+.judulguru-1{
+  display: none;
+}
+.box-guru{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding-bottom: 3%;
+}
+.item-guru{
+  width: 30%;
+  height: 150px;
+  border-radius: 10px;
+  border: 2px solid rgb(234, 234, 234);
+  background-color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.item-guru:hover{
+  background-color: rgb(206, 206, 206);
+}
+.img-guru{
+  height: 100%;
+  width: 130px;
+  border-radius: 10px 0px 0px 10px;
+}
+.btn-guru{
+  text-align: center;
+  padding: 10px;
+  display: block;
+}
+/* fasilitas */
+section.fasilitas{
+  padding-top: 8%;
+}
+.judul-fasilitas{
+  padding: 10px 10px 0px;
+  text-align: center;
+}
+.judul-fasilitas b{
+  font-size: 35px;
+}
+.judulfasilitas-1{
+  display: none;
+}
+.fasilitas-sekolah {
+  min-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
-section#home {
+.isi-fasilitas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.fasilitas-card{
+  background-image: url(aset/page.jpg);
+  width:400px;
+  height: 300px;
+  background-size: cover;
+  padding: 10px;
+  transition: 2s;
+}
+.fasilitas-card:hover{
+  transform: scale(0.9);
+  border: 5px solid yellow;
+}
+.fasilitas-jpgs {
+  width: 500px;
+  height: 300px;
+  margin: 3px;
+}
+
+.btn-fasilitas{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding: 5px 15px 5px;
+  margin-top: 10px;
+  font-size: 23px;
+}
+.btn-fasilitas a{
+ padding: 5px;
+  color: black;
+  border: 1px solid rgb(121, 121, 121);
+  text-decoration: none;
+}
+/* visimisi */
+.visimisi-sekolah {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  font-family: "Kanit", sans-serif;
+}
+
+.isi-visimisi1 {
+  width: 70%;
+  color: rgb(24, 24, 24);
+  font-size: 25px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#popup-visimisi {
+  display: none;
+}
+
+/* visimisi end */
+.isi-sambutan2 {
+  width: 50%;
+  padding: 0px 5px 0px;
+  backdrop-filter: blur(10px);
+  color: rgb(31, 30, 30);
+  border-radius: 20px;
+}
+
+.paero-jpg {
+  width: 20%;
+  height: 40%;
+  border-radius: 10px;
+}
+
+.kepsek-jpg {
+  border-radius: 20px;
+  width: 20%;
+}
+
+/* section 3 */
+.judul-berita {
+  width: 80%;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 20px 20px 0px;
+}
+.judulberita-2{
+  display: none;
+}
+.judul-berita b{
+  font-size: 40px;
+}
+.berita {
+  width: 100%;
+  height: auto;
+  padding: 10px 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgb(32, 94, 18);
+}
+
+.berita-jpg {
+  width: 100%;
+  height: 100%;
+}
+
+.isi-berita {
+  margin: 10px;
+  width: 25%;
+  background-color: white;
+  color: black;
+  overflow: hidden;
+}
+
+#title-berita {
+  font-size: 23px;
+  text-align: center;
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-berita {
+  padding: 5px 5px 0px;
+  gap: 1rem;
+}
+
+.tgl-berita {
+  display: flex;
+  justify-content: end;
+  padding: 5px 0px 0px;
+  margin-top: 10px;
+}
+
+.isi-next a {
+  color: rgb(255, 255, 255);
+}
+
+/* popup Berita */
+.popupbox {
+  width: 100%;
+  position: fixed;
+  top: 49.9%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10000;
+  overflow-y: auto;
+  height: 100%;
+  padding: 2em 20em;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.popup h1 {
+  padding-top: 15px;
+}
+
+.popup {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.popupbox.on,
+.popup.on {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.popup img {
+  width: 100%;
+  height: 100%;
+}
+
+/* popup Berita end */
+/* section4 */
+.judul-prestasi {
+  padding-top: 20px;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+.judulprestasi-1{
+  display: none;
+}
+.judul-prestasi b {
+ font-size: 35px;
+}
+.prestasi {
+  width: 100%;
+  padding: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.prestasi-jpg {
+  width: 30%;
+  height: 100%;
+}
+
+.isi-prestasi {
+ width: 100%;
+ flex-direction: column;
+}
+
+.detail-prestasi {
+  padding: 10px;
+}
+/* section5 (eskul) */
+.judul-eskul {
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
+  padding: 20px 10px 0px;
+}
+.juduleskul-2{
+  display: none;
+}
+.judul-eskul b{
+  font-size: 35px;
+}
+.eskul {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-size: cover;
+}
+
+.eskul::-webkit-scrollbar {
+  display: none;
+}
+
+.card-eskul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* 1 */
+.item-eskul1 {
+  width: 300px;
+  margin: 10px;
+  height: 200px;
+  border-radius: 20px;
+  background-image: url(https://th.bing.com/th/id/OIP.XTktgAVtgyrfjUuQbn_YdAAAAA?rs=1&pid=ImgDetMain);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.item-eskul1:hover {
+  transform: scale(0.9);
+}
+
+.item-eskul1 spans {
+  position: absolute;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  top: -10px;
+  left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-eskul1 spans::before {
+  content: 'paskib';
+  position: absolute;
+  width: 150%;
+  height: 40px;
+  background-image: linear-gradient(45deg, green 0%, green 51%, green 100%);
+  transform: rotate(-45deg) translateY(-20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23);
+}
+
+.item-eskul1 spans::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  z-index: -1;
+  box-shadow: 140px -140px #cc3f47;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+}
+
+/* 2 */
+.item-eskul2 {
+  width: 300px;
+  margin: 10px;
+  height: 200px;
+  border-radius: 20px;
+  background-image: url(https://th.bing.com/th/id/OIP.9TJyxzBI2pc7vQ2WB3i68QHaHa?w=1480&h=1480&rs=1&pid=ImgDetMain);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.item-eskul2:hover {
+  transform: scale(0.9);
+}
+
+.item-eskul2 spans {
+  position: absolute;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  top: -10px;
+  left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-eskul2 spans::before {
+  content: 'pramuka';
+  position: absolute;
+  width: 150%;
+  height: 40px;
+  background-image: linear-gradient(45deg, green 0%, green 51%, green 100%);
+  transform: rotate(-45deg) translateY(-20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23);
+}
+
+.item-eskul2 spans::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  z-index: -1;
+  box-shadow: 140px -140px #cc3f47;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+}
+
+/* 3 */
+.item-eskul3 {
+  width: 300px;
+  margin: 10px;
+  height: 200px;
+  border-radius: 20px;
+  background-image: url(https://th.bing.com/th/id/R.bcd16e4dbe54b25c40169d26b8102334?rik=n4VXMkYXwB8pXA&riu=http%3a%2f%2fsmpn1sgs.sch.id%2fpublic%2fimages%2fartikel%2f08-2017%2f28201707-700x700-pmr.jpg&ehk=Ele3Qt80THVaCL%2f3GhMa4Qf8D%2fdPTTECTmnxtEQzZh0%3d&risl=&pid=ImgRaw&r=0);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.item-eskul3:hover {
+  transform: scale(0.9);
+}
+
+.item-eskul3 spans {
+  position: absolute;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  top: -10px;
+  left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-eskul3 spans::before {
+  content: 'PMR';
+  position: absolute;
+  width: 150%;
+  height: 40px;
+  background-image: linear-gradient(45deg, green 0%, green 51%, green 100%);
+  transform: rotate(-45deg) translateY(-20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23);
+}
+
+.item-eskul3 spans::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  z-index: -1;
+  box-shadow: 140px -140px #cc3f47;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+}
+
+/* 4 */
+.item-eskul4 {
+  width: 300px;
+  margin: 10px;
+  height: 200px;
+  border-radius: 20px;
+  background-image: url(aset/db.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.item-eskul4:hover {
+  transform: scale(0.9);
+}
+
+.item-eskul4 spans {
+  position: absolute;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  top: -10px;
+  left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-eskul4 spans::before {
+  content: 'drum band';
+  position: absolute;
+  width: 150%;
+  height: 40px;
+  background-image: linear-gradient(45deg, green 0%, green 51%, green 100%);
+  transform: rotate(-45deg) translateY(-20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23);
+}
+
+.item-eskul4 spans::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  z-index: -1;
+  box-shadow: 140px -140px #cc3f47;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+}
+
+/* 5 */
+
+.item-eskul5 {
+  width: 300px;
+  margin: 10px;
+  height: 200px;
+  border-radius: 20px;
+  background-image: url(https://th.bing.com/th/id/OIP.8iLB2-z5m-ES8iQZOT1HuAHaFw?rs=1&pid=ImgDetMain);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.item-eskul5:hover {
+  transform: scale(0.9);
+}
+
+.item-eskul5 spans {
+  position: absolute;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  top: -10px;
+  left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-eskul5 spans::before {
+  content: 'silat';
+  position: absolute;
+  width: 150%;
+  height: 40px;
+  background-image: linear-gradient(45deg, green 0%, green 51%, green 100%);
+  transform: rotate(-45deg) translateY(-20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23);
+}
+
+.item-eskul5 spans::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  z-index: -1;
+  box-shadow: 140px -140px #cc3f47;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+}
+
+/* 7 */
+
+.item-eskul7 {
+  width: 300px;
+  margin: 10px;
+  height: 200px;
+  border-radius: 20px;
+  background-image: url(https://img.freepik.com/premium-vector/traditional-dancer-profession_180868-71.jpg?w=1380);
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.item-eskul1:hover {
+  transform: scale(0.9);
+}
+
+.item-eskul7 spans {
+  position: absolute;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  top: -10px;
+  left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-eskul7 spans::before {
+  content: 'Tari';
+  position: absolute;
+  width: 150%;
+  height: 40px;
+  background-image: linear-gradient(45deg, green 0%, green 51%, green 100%);
+  transform: rotate(-45deg) translateY(-20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23);
+}
+
+.item-eskul7 spans::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  z-index: -1;
+  box-shadow: 140px -140px #cc3f47;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+}
+
+/* 8 */
+.item-eskul8 {
+  width: 300px;
+  margin: 10px;
+  height: 200px;
+  border-radius: 20px;
+  background-image: url(https://th.bing.com/th/id/OIP.dGwvhS6f0EEpxtT-7ZJivwHaEo?rs=1&pid=ImgDetMain);
+  background-size: cover;
+  position: relative;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.item-eskul1:hover {
+  transform: scale(0.9);
+}
+
+.item-eskul8 spans {
+  position: absolute;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  top: -10px;
+  left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-eskul8 spans::before {
+  content: 'Hadroh';
+  position: absolute;
+  width: 150%;
+  height: 40px;
+  background-image: linear-gradient(45deg, green 0%, green 51%, green 100%);
+  transform: rotate(-45deg) translateY(-20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23);
+}
+
+.item-eskul8 spans::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  z-index: -1;
+  box-shadow: 140px -140px #cc3f47;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+}
+
+/* 9 */
+.item-eskul9 {
+  width: 300px;
+  margin: 10px;
+  height: 200px;
+  border-radius: 20px;
+  background-image: url(https://img.freepik.com/free-vector/flat-badminton-player-with-racket_52683-12375.jpg?t=st=1718353081~exp=1718356681~hmac=2c003d4322b280c5e76f1d85ce534079ad5d5e8ce20793ef7bc5880422dbdb36);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.item-eskul9:hover {
+  transform: scale(0.9);
+}
+
+.item-eskul9 spans {
+  position: absolute;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  top: -10px;
+  left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-eskul9 spans::before {
+  content: 'Badminton';
+  position: absolute;
+  width: 150%;
+  height: 40px;
+  background-image: linear-gradient(45deg, green 0%, green 51%, green 100%);
+  transform: rotate(-45deg) translateY(-20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23);
+}
+
+.item-eskul9 spans::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  z-index: -1;
+  box-shadow: 140px -140px #cc3f47;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+}
+
+/* section6 */
+section.JURUSAN{
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
+}
+.judul-jurusan {
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.ketupat-jurusan {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 5% 10px 10%;
+}
+.item-kj {
+  background-color: green;
+  color: white;
+  border: 3px solid yellow;
+  width: 30%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  padding: 20px 0pxs 20px;
+  gap: 20px;
+  margin: 10px;
+  transition: 1s;
+}
+.item-kj:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 10px rgb(42, 41, 41);
+}
+#p {
+  background-image: url(aset/ketupat.png);
+  background-size: cover;
+  height: 60px;
+  width: 60px;
+  padding: 10px;
+  margin-left: -29px;
+  transform: rotate(45deg);
+}
+.h2 {
+  padding: 10px;
+}
+
+/* popup Jurusan */
+.popupbox_js {
+  width: 100%;
+  position: fixed;
+  top: 49.9%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  background-image: url(aset/page.jpg);
+  background-size: cover;
+  z-index: 10000;
+  overflow-y: auto;
+  height: 100%;
+  padding: 0em 0.1px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+.popup_js h1 {
+  padding-top: 15px;
+}
+.popup_js {
+  width:90%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  font-family: "Kanit", sans-serif;
+  border: 5px solid yellow;
+  cursor: pointer;
+}
+.popupbox_js.off{
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+.popupbox_js.on {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+.img-popup-jurusan{
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  overflow: auto;
+}
+.popup_js img {
+  width: 30%;
+  height: 30%;
+}
+/* popup Jurusan End */
+
+
+@media (max-width: 999px) {
+  .ketupat-jurusan {
+    display: flex;
+    justify-content: center;
+  }
+
+  .item-kj {
+    width: 100%;
+    height: 150px;
+  }
+
+  .jurusan-kolom {
+    width: 60%;
+  }
+
+  /* sambutan numpang media query */
+  .isi-sambutan2 {
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+@media (min-width: 999px) {
+  .item-kj {
+    background-color: green;
+    color: white;
+    width: 30%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    padding: 20px 0pxs 20px;
+    gap: 20px;
+    margin: 20px;
+    transition: 1s;
+  }
+
+  .jurusan-kolom {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+
+/* scetion7 */
+.judul-kontak {
+  padding: 10px;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 90px;
+}
+.judul-kontak b{
+  font-size: 35px;
+}
+.kontak {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.item-kontak {
+  width: 40%;
+  height: 50%;
+}
+
+.colorful-form {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #fff;
+  color: #333;
+  border-radius: 5px;
+}
+
+textarea.form-input {
+  height: 100px;
+}
+
+.form-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #ff6f69;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: #ff5f59;
+}
+
+.t-kontak {}
+
+.text-kontak {
+  width: 40%;
+  height: auto;
+}
+
+.isi-kontak {
+  padding: 20px;
+  margin: 10px;
+  font-size: 22px;
+  display: flex;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+/* scetion7 */
+.map-container {
+  text-align: center;
+  padding: 10px;
+  background-attachment: fixed;
+}
+
+iframe {
+  width: 80%;
+}
+
+.judul-lokasi {
+  width: 100%;
+  font-size: 20px;
+}
+
+/* section8 */
+footer {
+  width: 100%;
+  padding: 8% 10px 8%;
+  background-size: cover;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1003%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(39%2c 43%2c 46%2c 1)'%3e%3c/rect%3e%3cpath d='M1370 55L1369 -166' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M944 158L943 455' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M134 475L133 627' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M500 207L499 392' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M620 180L619 358' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1005%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M937 323L936 153' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1336 204L1335 404' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1005%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1295 385L1294 729' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1005%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M772 460L771 139' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1372 123L1371 398' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1005%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1437 270L1436 526' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M266 36L265 297' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M81 152L80 -227' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M39 231L38 383' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M881 371L880 600' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1005%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1186 176L1185 -174' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M899 108L898 -74' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1005%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1319 214L1318 35' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M991 522L990 907' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1005%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1375 337L1374 31' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1005%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M802 516L801 686' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1005%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M291 149L290 -175' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M184 540L183 381' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1005%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1372 19L1371 -223' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M337 501L336 289' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1005%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M410 215L409 -192' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1371 64L1370 408' stroke-width='10' stroke='url(%26quot%3b%23SvgjsLinearGradient1005%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M842 340L841 -28' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M664 13L663 -406' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1005%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M1164 320L1163 496' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1005%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M740 501L739 288' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M1062 344L1061 143' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M64 265L63 487' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M396 322L395 714' stroke-width='6' stroke='url(%26quot%3b%23SvgjsLinearGradient1005%26quot%3b)' stroke-linecap='round' class='Up'%3e%3c/path%3e%3cpath d='M373 52L372 402' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3cpath d='M62 482L61 138' stroke-width='8' stroke='url(%26quot%3b%23SvgjsLinearGradient1004%26quot%3b)' stroke-linecap='round' class='Down'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1003'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='0%25' y1='0%25' x2='0%25' y2='100%25' id='SvgjsLinearGradient1004'%3e%3cstop stop-color='rgba(28%2c 83%2c 142%2c 0)' offset='0'%3e%3c/stop%3e%3cstop stop-color='%231c538e' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='0%25' y1='100%25' x2='0%25' y2='0%25' id='SvgjsLinearGradient1005'%3e%3cstop stop-color='rgba(28%2c 83%2c 142%2c 0)' offset='0'%3e%3c/stop%3e%3cstop stop-color='%231c538e' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ftr {
+  flex-direction: column;
+  width: 20%;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  margin: 10px;
+}
+
+.ftr-end {
+  text-align: center;
+  color: white;
+  bottom: 0;
+}
+
+
+
+@media (max-width: 690px) {
+  .kontak {
+    flex-direction: column;
+  }
+
+  .item-kontak {
+    width: 100%;
+  }
+
+  .text-kontak {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  /* section2 */
+  .sambutan {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding-bottom: 20px;
+    background-image: none;
+    height: 1000px;
+  }
+
+  /* new apdet */
+  /* pp seklah */
+  .profil-sekolah {
+    min-width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 10%;
+    padding-bottom: 30px;
+  }
+
+  .kepsek-jpg {
+    width: 50%;
+    height: 30%;
+  }
+
+  .sejarah-sekolah {
+    padding-top: 10%;
+    min-width: 100%;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
-    background-size: cover;
-    background-position: center;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1005%26quot%3b)' fill='none'%3e%3cpath d='M 0%2c113 C 96%2c181 288%2c475.4 480%2c453 C 672%2c430.6 768%2c18.2 960%2c1 C 1152%2c-16.2 1344%2c293.8 1440%2c367L1440 560L0 560z' fill='rgba(9%2c 60%2c 102%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1005'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 35px;
-    border-image: fill 0 linear-gradient(#0003, #093c66);
-    flex-wrap: wrap;
-}
-
-.judul {
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-size: 33px;
-    margin-top: 20%;
-    color: white;
-}
-.tema{
     gap: 2rem;
-    flex-wrap: wrap;
-}
+  }
 
-h1{
-    overflow: hidden;
-    width: 40%;
-}
+  /* identts */
+  .identitas-sekolah {
+    overflow: none;
+    min-width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
 
-.card {
+  .isi-identitas {
+    width: 100%;
+    min-height: 800px;
+    padding-left: 10px;
+    line-height: 1.6;
+  }
+  #isi2-inone{
+    display: none;
+  }
+  /* pp-guru */
+  .jdl-guru{
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.images {
-    width: 40%;
-    height: 40%;
-}
-
-.about-jpg {
-    width: 100%;
+    justify-content: space-between;
+    padding: 10px 10px 0px;
+    margin-bottom: 10px;
+  }
+  .jdl-guru p{
+    font-size: 12px;
+  }
+  .judulguru-2{
+    text-align: start;
+  }
+  .judulguru-1{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 19px;
+    padding: 5px;
+  }
+  .jdl-guru b{
+    font-size: 20px;
+  }
+  #navli-none{
+    display: flex;
+  }
+  .img-guru{
     height: 100%;
-    border-radius: 10px;
-}
-
-.about-png {
-    width: 100%;
-    height: 40%;
-    border-radius: 10px;
-}
-.isi-teks{
-    display: flex;
-    gap: 1rem;
-}
-.text {
-    width: 50%;
-    color: white;
-    padding: 0 10px 0;
-}
-.text-a {
-    line-height: 1.5;
-    align-items: center;
-    display: flex;
-    margin: 5px;
-}
-
-section#about {
-    min-height: 100%;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='800' preserveAspectRatio='none' viewBox='0 0 1440 800'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1001%26quot%3b)' fill='none'%3e%3crect width='1440' height='800' x='0' y='0' fill='rgba(9%2c 60%2c 102%2c 1)'%3e%3c/rect%3e%3cpath d='M -680.2440339605178%2c192 C -584.24%2c277.2 -392.24%2c589.2 -200.24403396051775%2c618 C -8.24%2c646.8 87.76%2c362 279.75596603948225%2c336 C 471.76%2c310 567.76%2c516.6 759.7559660394822%2c488 C 951.76%2c459.4 1103.71%2c188.6 1239.7559660394822%2c193 C 1375.8%2c197.4 1399.95%2c446.6 1440%2c510' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -798.5145090774333%2c437 C -702.51%2c378.6 -510.51%2c121 -318.5145090774334%2c145 C -126.51%2c169 -30.51%2c534 161.4854909225666%2c557 C 353.49%2c580 449.49%2c282.6 641.4854909225667%2c260 C 833.49%2c237.4 961.78%2c474 1121.4854909225667%2c444 C 1281.19%2c414 1376.3%2c176.8 1440%2c110' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -359.84167915044395%2c409 C -263.84%2c365 -71.84%2c178.8 120.15832084955602%2c189 C 312.16%2c199.2 408.16%2c472 600.158320849556%2c460 C 792.16%2c448 888.16%2c77.4 1080.158320849556%2c129 C 1272.16%2c180.6 1488.19%2c665.8 1560.158320849556%2c718 C 1632.13%2c770.2 1464.03%2c455.6 1440%2c390' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -141.98803074371898%2c582 C -45.99%2c524.6 146.01%2c270.8 338.011969256281%2c295 C 530.01%2c319.2 626.01%2c715.8 818.011969256281%2c703 C 1010.01%2c690.2 1106.01%2c257.2 1298.011969256281%2c231 C 1490.01%2c204.8 1749.61%2c584.2 1778.011969256281%2c572 C 1806.41%2c559.8 1507.6%2c250.4 1440%2c170' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1001'%3e%3crect width='1440' height='800' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    background-size: cover;
-    flex-wrap: wrap;
-}
-
-
-section#Experience {
-    min-height: 100vh;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='800' preserveAspectRatio='none' viewBox='0 0 1440 800'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1001%26quot%3b)' fill='none'%3e%3crect width='1440' height='800' x='0' y='0' fill='rgba(9%2c 60%2c 102%2c 1)'%3e%3c/rect%3e%3cpath d='M -680.2440339605178%2c192 C -584.24%2c277.2 -392.24%2c589.2 -200.24403396051775%2c618 C -8.24%2c646.8 87.76%2c362 279.75596603948225%2c336 C 471.76%2c310 567.76%2c516.6 759.7559660394822%2c488 C 951.76%2c459.4 1103.71%2c188.6 1239.7559660394822%2c193 C 1375.8%2c197.4 1399.95%2c446.6 1440%2c510' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -798.5145090774333%2c437 C -702.51%2c378.6 -510.51%2c121 -318.5145090774334%2c145 C -126.51%2c169 -30.51%2c534 161.4854909225666%2c557 C 353.49%2c580 449.49%2c282.6 641.4854909225667%2c260 C 833.49%2c237.4 961.78%2c474 1121.4854909225667%2c444 C 1281.19%2c414 1376.3%2c176.8 1440%2c110' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -359.84167915044395%2c409 C -263.84%2c365 -71.84%2c178.8 120.15832084955602%2c189 C 312.16%2c199.2 408.16%2c472 600.158320849556%2c460 C 792.16%2c448 888.16%2c77.4 1080.158320849556%2c129 C 1272.16%2c180.6 1488.19%2c665.8 1560.158320849556%2c718 C 1632.13%2c770.2 1464.03%2c455.6 1440%2c390' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -141.98803074371898%2c582 C -45.99%2c524.6 146.01%2c270.8 338.011969256281%2c295 C 530.01%2c319.2 626.01%2c715.8 818.011969256281%2c703 C 1010.01%2c690.2 1106.01%2c257.2 1298.011969256281%2c231 C 1490.01%2c204.8 1749.61%2c584.2 1778.011969256281%2c572 C 1806.41%2c559.8 1507.6%2c250.4 1440%2c170' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1001'%3e%3crect width='1440' height='800' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-section#kontak {
-    min-height: 100vh;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1003%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(9%2c 60%2c 102%2c 1)'%3e%3c/rect%3e%3cpath d='M1560 560L0 560 L0 332.18Q65.18 277.36%2c 120 342.54Q160.98 263.52%2c 240 304.5Q324.16 268.66%2c 360 352.83Q388.81 309.63%2c 432 338.44Q483.21 317.65%2c 504 368.86Q531.1 275.96%2c 624 303.06Q669.19 276.25%2c 696 321.44Q762.19 267.63%2c 816 333.82Q888.39 286.22%2c 936 358.61Q961.54 264.15%2c 1056 289.69Q1130.2 243.89%2c 1176 318.1Q1203.74 273.84%2c 1248 301.57Q1339.29 272.86%2c 1368 364.14Q1398.35 322.49%2c 1440 352.84Q1477.08 269.91%2c 1560 306.99z' fill='%23182f5d'%3e%3c/path%3e%3cpath d='M1488 560L0 560 L0 421.64Q57.02 358.66%2c 120 415.68Q168.95 344.63%2c 240 393.59Q292.73 326.31%2c 360 379.04Q387.18 334.22%2c 432 361.4Q510.55 319.95%2c 552 398.5Q612.47 386.97%2c 624 447.44Q627.39 378.83%2c 696 382.22Q761.65 327.87%2c 816 393.52Q895.83 353.35%2c 936 433.18Q942.75 367.94%2c 1008 374.69Q1050.58 345.27%2c 1080 387.85Q1129.16 365.01%2c 1152 414.17Q1202.51 392.68%2c 1224 443.19Q1226.44 373.63%2c 1296 376.08Q1344.47 304.55%2c 1416 353.02Q1474.05 339.06%2c 1488 397.11z' fill='%2325467d'%3e%3c/path%3e%3cpath d='M1560 560L0 560 L0 512.9Q45.1 438%2c 120 483.09Q155.15 398.24%2c 240 433.38Q285.69 407.06%2c 312 452.75Q363.7 432.45%2c 384 484.15Q398.64 426.79%2c 456 441.43Q509.22 374.65%2c 576 427.88Q628.49 408.37%2c 648 460.86Q678.48 419.34%2c 720 449.82Q765.64 375.47%2c 840 421.11Q897.79 406.9%2c 912 464.69Q963.25 443.94%2c 984 495.19Q1033.93 425.12%2c 1104 475.05Q1158.61 409.66%2c 1224 464.27Q1239.7 407.97%2c 1296 423.67Q1339.34 395%2c 1368 438.34Q1426.59 424.93%2c 1440 483.52Q1483.79 407.31%2c 1560 451.1z' fill='%23356cb1'%3e%3c/path%3e%3cpath d='M1488 560L0 560 L0 586.14Q33.66 547.8%2c 72 581.46Q67 504.47%2c 144 499.47Q194.62 478.09%2c 216 528.71Q264.14 504.85%2c 288 552.99Q318.85 511.84%2c 360 542.69Q379.18 489.87%2c 432 509.05Q482.98 440.03%2c 552 491.01Q609.48 476.49%2c 624 533.97Q705.53 495.5%2c 744 577.03Q764.19 525.22%2c 816 545.41Q856.82 466.23%2c 936 507.05Q1024.3 475.35%2c 1056 563.65Q1095.19 482.84%2c 1176 522.03Q1222.83 448.86%2c 1296 495.68Q1397.94 477.62%2c 1416 579.56Q1445.26 536.82%2c 1488 566.08z' fill='rgba(192%2c 208%2c 227%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1003'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
-}
-
-.container{
-    display: flex;
-    padding: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
+    width: 130px;
+    border-radius: 10px 0px 0px 10px;
   }
-
-  main {
-    padding: 20px;
-    margin: 10px;
-    width: 40%;
+  .all-guru{
+    overflow: none;
+    padding: 30px 0px 0px;
+  }
+  .box-guru{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    overflow: auto;
+    padding: 0px 10px 0px;
+  }
+  .item-guru{
+    min-width: 80%;
+  }
+  .btn-guru{
+    display: none;
+  }
+  /* fasilitas */
+  .judul-fasilitas{
+    margin-top: 10%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
-  
-  /* Form Styles */  
-  form {
+  .judulfasilitas-2{
+    text-align: start;
+  }
+  .judulfasilitas-1{
     display: flex;
+    padding: 5px;
+    font-size: 20px;
+  }
+  .judul-fasilitas b{
+    font-size: 20px;
+  }
+  .fasilitas-sekolah {
+    min-width: 100%;
+    height: auto;
     flex-direction: column;
-    border-radius: 15px;
-    width: 100%;
-    padding: 10px;
-    border: 2px solid rgb(156, 156, 156);
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    overflow: auto;
+  }
+  .isi-fasilitas{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    overflow: auto;
     gap: 10px;
-    background-color: rgb(188, 188, 188);
+    padding: 10px;
   }
-  
-  form:hover{
-    border: 2px solid red;
+  .fasilitas-card{
+    background-image: url(aset/page.jpg);
+    width:250px;
+    height: 200px;
+    background-size: cover;
+    padding: 10px;
   }
-  
-  form label {
-    /* margin: 5px; */
+  .fasilitas-jpgs {
+    width: 95%;
+    height: 15%;
+  }
+  .btn-fasilitas {
+    display: flex;
+    font-size: 15px;
+  }
 
+  .btn-fasilitas a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
   }
-  
-  form input, form textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+
+  /* visimisi */
+  .visimisi-sekolah {
+    padding-top: 10%;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
   }
-  
-  form button {
+
+  .isi-visimisi1 {
+    width: 90%;
+    color: rgb(24, 24, 24);
+    font-size: 18px;
+    background-color: white;
     padding: 10px;
-    background-color: rgb(30, 31, 32);
-    color: white;
-    border: none;
     border-radius: 10px;
   }
-  
-  h1{
+
+  .paero-jpg {
+    width: 70%;
+    height: 200px;
+  }
+
+  .isi-sambutan2 {
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+  }
+
+  #h2-sambutan {
     text-align: center;
   }
-  
-  
-  
-  
-  .card-item{
-    width: 40%;
-    padding: 10px;
-    margin-top: 5px;
+
+  /* Section3 */
+  .judul-berita{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    text-align: start;
+  }
+  .judul-berita p{
+    font-size: 12px;
+  }
+  .judulberita-2{
+    font-size: 20px;
+    padding: 5px;
+    font-weight: bold;
+    display: flex;
+  }
+  .judul-berita b{
+    font-size: 20px;
+  }
+  .berita {
+    padding: 0;
+  }
+  .isi-berita {
+    min-width: 40%;
+  }
+  #title-berita {
+    font-size: 17px;
+  }
+  .title-secend {
+    font-size: 12px;
+  }
+  .tgl-berita {
+    flex-wrap: wrap;
+    font-size: 12px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .text-berita {
+    padding-bottom: 0;
+  }
+  .isi-next {
+    min-width: 70%;
+  }
+  .isi-next a {
     color: white;
   }
-  
-  .item1{
-    display: flex;
-    padding: 10px;
-    align-items: center;
-    margin: 10px;
-    gap: 10px;
-    margin-top: 20px;
+
+  .popupbox {
+    padding: 2em 0.5em;
   }
-  .item2{
-    /* background-color: blue; */
-    align-items: center;
+
+  /* section4 */
+  .judul-prestasi {
+    width: 100%;
+    margin-top: 5%;
     display: flex;
-    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
   }
-  
-  #item-icon{
+  .judul-prestasi p{
+    font-size: 12px;
+  }
+  .judulprestasi-2{
+    text-align: start;
+  }
+  .judulprestasi-1{
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+  }
+  .judul-prestasi b{
     font-size: 25px;
-    background-color: rgb(30, 32, 32);
-    padding: 10px;
-    border: 1px solid white;
+  }
+  .prestasi {
+    justify-content: space-around;
+    overflow: auto;
+    flex-wrap: wrap;
+  }
+  .isi-prestasi{
+    width: 90%;
+  }
+  .prestasi-jpg {
+    width: 100%;
+    height: 200px;
+  }
+  .tgl-prestasi {
+    font-size: 15px;
+    display: flex;
+    padding-top: 20px;
+  }
+
+  .user-prestasi {
+    font-size: 15px;
+  }
+
+  /* sevtion5 */
+  .judul-eskul{
+    padding-left: 10px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .judul-eskul p{
+    font-size: 12px;
+  }
+  .juduleskul-1{
+    text-align: start;
+    padding-left: 10px;
+  }
+  .juduleskul-2{
+    display: flex;
+    font-size: 20px;
+    padding: 5px;
+  }
+  .judul-eskul b{
+    font-size: 25px;
+  }
+  .item-eskul1,
+  .item-eskul2,
+  .item-eskul3,
+  .item-eskul4,
+  .item-eskul5,
+  .item-eskul7,
+  .item-eskul8,
+  .item-eskul9 {
+    min-width: 60%;
+    height: 150px;
+  }
+  .eskul{
+    justify-content: start;
+    display: flex;
+    padding: 0px;
+  }
+  .card-eskul {
+    display: flex;
+    overflow: auto;
+    justify-content: start;
+    flex-wrap: nowrap;
+    padding: 0px 10px 0px;
+    width: 100%;
+  }
+  /* scetion6 */
+  .judul-jurusan{
+    padding: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
   }
-  
-
-  /* footer */
-footer{
-    /* background-color: rgb(35, 35, 36); */
-    background-image: url(aset/bg-angkasa\ bulan.jpg);
+  .ketupat-jurusan{
+    min-width: 100%;
+    background-image: url(aset/page.jpg);
     background-size: cover;
+    border-radius: 20px;
+  }
+  .jurusan-kolom {
+    min-width: 80%;
+  }
+  .jurusan {
     display: flex;
-    justify-content: center;
-    background-position: center;
-    height: 500px;
+  }
+  .item-kj {
+    min-width: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .popupbox_js{
     align-items: center;
-    border-image: fill 0 linear-gradient(#093c66,#0003);
-    flex-wrap: wrap;
-    /* border: 2px  solid black; */
-}
-.ftr-item{
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    line-height: 1.5;
-    color: white;
-    text-align: center;
-}
-.nuri-jpg{
-    border-radius: 50%;
+  }
+  .popup_js{
     height: 100%;
-}
-.end-ftr{
-    text-align: center;
     width: 100%;
-    bottom: 0;
-    color: white;
+    overflow: auto;
+    border: 3px solid white;
+  }
+  .img-popup-jurusan{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    overflow: auto;
+  }
+  .popup_js img {
+    width: 70%;
+    height: 40%;
+  }
+  /* section7 */
+  .judul-kontak b {
+    font-size: 20px;
+  }
+  .item-kontak {
+    width: 90%;
+    margin: auto;
+  }
+  .text-kontak {
+    width: 90%;
+  }
+
+  .isi-kontak {
+    padding: 10px;
+  }
+
+  .t-kontak {
+    font-size: 16px;
+  }
+
+  .map-container {
+    margin-top: 30px;
+    width: 100%;
+    height: 40%;
+  }
+
+  iframe {
+    width: 90%;
+    height: 300px;
+  }
+
+  /* scetion8 */
+  footer {
+    height: auto;
+  }
+
+  .ftr {
+    width: 90%;
+  }
+
+  .ftr-end {
+    margin-top: 30px;
+  }
+
+  /* navbar */
+  nav {
+    background-color: white;
+    color: black;
+    /* box-shadow: 0 3px 10px rgb(60, 60, 60); */
+  }
+
+  #none {
+    display: none;
+  }
 }
 
-@media (max-width: 321px){
-    main{
-        display: none;
-    }
-    .revisi{
-        display: flex;
-        height: 100vh;
-        justify-content: center;
-        align-items: center;
-        background-color: black;
-        color: rgb(16, 145, 16);
-        font-weight: bold;
-    }
-}
-@media (min-width: 319px){
-    .revisi{
-        display: none;
-    }
-}
-@media (max-width: 379px) {
-    #i-hidden #hidden{
-        display: flex;
-        justify-content: center;
-        width: 20px;
-        align-items: center;
-        font-size: 13px;
-    }
-    #i-hidden a{
-        color: rgb(0, 0, 0);
-    }
-    nav {
-        width: 100%;
-        justify-content: center;
-        display: flex;
-        padding: 10px;
-        background-color: white;
-    }
-    nav ul li a{
-        display: flex;
-        justify-content: center;
-        margin: 0;
-    }
+/* responsive tambahan */
+@media (max-width: 400px) {
 
-    /* nav li{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: rgb(66, 120, 201);
-        border-radius: 10px;
-        color: white;
-        padding: 5px;
-        gap: 5px;
-        box-shadow: 0 6px 10px rgb(78, 78, 78);
-    } */
-    main{
-        margin: 0;
-        padding: 7px 0 7px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: nowrap;
-      }
-      form{
-        width: 200px;
-        box-shadow: none;
-      }
-      .card-item{
-        margin: 0;
-        padding: 0;
-        margin-top: 10px;
-      }
-      .container{
-        display: flex;
-        padding: 0;
-        overflow: hidden;
-        justify-content: center;
-      }
-      .item2{
-        flex-wrap: wrap;
-      }
-      .item1{
-      }
-      #item-icon{
-       padding: 5px;
-      }
-}
-@media (max-width: 700px) {
-    #hidden{
-        font-size: 11px;
-    }
-    .revo-jpg{
-        width: 90%;
-        border-radius: 50%;
-        height: 100%;
-    }
-    h1{
-        margin-top: 0;
-        width: auto;
-        height: auto;
-    }
-    .revo{
-        height: 40%;
-    }
-    .tema{
-        gap: 0;
-    }
-    section#home {
-        align-items: start;
-    }
-    footer{
-        flex-direction: column;
-        text-align: center;
-        height: auto;
-        padding: 10px 10px 60px;
-        background-position: bottom;
-    }
-    .ftr-item{
-        margin-top: 30px;
-    }
-    header.navbar{
-        bottom: 0;
-    }
-    section.tema {
-        text-align: center;
-    }
-
-    /* nav */
-    header {
-        width: auto;
-    }
-
-    nav {
-        width: 80%;
-        padding: 10px;
-        border-radius: 30px;
-        box-shadow: 0 0 10px 3px rgb(0, 0, 0, 0.25);
-        background: linear-gradient(to bottom, #e5e3e3, #e6e6e6);
-        flex-wrap: nowrap;
-    }
-    nav li{
-        flex-direction: column;
-        display: flex;
-    }
-    /* section */
-    section#about {
-        flex-wrap: wrap;
-        width: auto;
-    }
-
-    section#services {
-        display: list-item;
-    }
-    
-    .card{
-        gap: 0;
-        align-items: start;
-    }
-    .images {
-        width: 100%;
-        height: 30%;
-    }
-
-    .about-jpg {
-        width: 100%;
-    }
-
-    .about-png {
-        width: 100%;
-        border-radius: 10px;
-        margin: auto;
-    }
-
-    .text {
-        width: auto;
-       
-    }
-
-    /* contact */
-    .container{
-        flex-direction: column;
-        flex-wrap: wrap;
-        padding: 10px;
-      }
-      main{
-        width: auto;
-        display: flex;
-        justify-content: center;
-      }
-      .card-item{
-        width: auto;
-        padding: 0;
-      }
-      .item2{
-        display: flex;
-        align-items: center;
-      }
-      .ftr-item{
-        width: auto;
-      }
-      .nuri-jpg{
-        width: auto;
-      }
-
-}
-@media (min-width: 380px){
-    nav ul li #i-hidden a:hover{
-        background-color: rgb(33, 34, 34);
-        padding: 5px;
-        color: white;
-        border-radius: 10px;
-     }
+  .item-eskul1,
+  .item-eskul2,
+  .item-eskul3,
+  .item-eskul4,
+  .item-eskul5,
+  .item-eskul7,
+  .item-eskul8,
+  .item-eskul9 {
+    width: 100%;
+  }
 }
 
-@media (min-width: 700px){
-    header.navbar nav ul li{
-        border-bottom: 2px solid rgb(36, 83, 133);
-        margin: 0 15px;
-        border-radius: 10px;
-        padding: 10px;
-        background-color: rgb(33, 93, 172);
-        text-align: center;
-        color: white;
-    }
-    header.navbar nav ul li:hover {
-        border-bottom: 2px solid rgb(36, 83, 133);
-        margin: 0 15px;
-        border-radius: 10px;
-        background-color: tomato;
-        text-align: center;
-        color: white;
-    }
-    /* #typing span{
-        color: #5fa1d7;
-    } */
-    header.navbar{
-        top: 0;
-    }
-    .ftr-item-a{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        margin: 10px;
-        color: white;
-        text-align: center;
-    }
-    .revo{
-        width: 30%;
-        height: 90%;
-        display: flex;
-        justify-content: center;
-    }
-    .revo-jpg{
-        width: 100%;
-        border: 2px solid white;
-        border-radius: 50%;
-    }
-    nav ul li #i-hidden a:hover{
-        background-color: transparent;
-        padding: 0;
-        color: white;
-        border-radius: 10px;
-     }
+@media (max-width: 301px) {
+
+  /* profil seklah */
+  .profil-sekolah {
+    padding-top: 20%;
+    height: 1300px;
+  }
+
+  .isi-sambutan2 {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .kepsek-jpg {
+    height: 200px;
+  }
+
+  /* sejarah-sekolah */
+  .sejarah-sekolah {
+    padding-top: 100%;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+  }
+  /* visimisi */
+  .visimisi-sekolah {
+    padding-top: 10%;
+  }
+
+  .isi-visimisi1 {
+    height: 900px;
+    overflow: hidden;
+  }
+
+  #popup-visimisi {
+    display: flex;
+  }
+
+  #visi-none {
+    display: none;
+  }
 }
 
-@media (min-width: 900px){
-    .home1 {
-        /* position: relative; */
-        transition: transform 0.5s ease-out;
-    }
-    
-    .home1.slide {
-        transform: translateX(900px); 
-    }
+/* respponsive tambahan */
+@media(max-width: 320px) {
+  .tgl-berita {
+    display: flex;
+    justify-content: end;
+    padding: 0px;
+  }
+}
+
+/* server down */
+@media (max-width: 280px) {
+  .all-body {
+    display: none;
+  }
+
+  .server-down {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: red;
+  }
 }

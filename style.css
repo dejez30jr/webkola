@@ -1273,8 +1273,8 @@ footer {
     display: flex;
   }
   .img-guru{
-    height: 130px;
-    width: 100%;
+    height: 100px;
+    width: 100px;
     border-radius: 10px;
   }
   .all-guru{
@@ -1288,11 +1288,14 @@ footer {
     flex-wrap: nowrap;
     padding: 0px 10px 0px;
   }
+  .isi-guru{
+    font-size: 14px;
+    padding: 0px 3px 0px;
+  }
   .item-guru{
-    min-width: 50%;
-    flex-direction: column;
+    padding: 10px;
+    min-width: 80%;
     height: auto;
-    flex-wrap: wrap;
   }
   .btn-guru{
     display: none;

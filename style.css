@@ -69,7 +69,6 @@ section .judul-prestasi {
 #none {
   font-family: "Oswald", sans-serif;
 }
-
 .containers {
   min-width: 100%;
   height: 100vh;
@@ -96,13 +95,6 @@ section .judul-prestasi {
 }
 
 /* section 2 */
-.sambutan {
-  display: flex;
-  overflow: hidden;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1600' height='1000' preserveAspectRatio='none' viewBox='0 0 1600 1000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1081%26quot%3b)' fill='none'%3e%3cpath d='M 0%2c412 C 160%2c455.2 480%2c623.2 800%2c628 C 1120%2c632.8 1440%2c474.4 1600%2c436L1600 1000L0 1000z' fill='rgba(32%2c 94%2c 18%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1081'%3e%3crect width='1600' height='1000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
-}
-
-/* (new apdet) */
 .profil-sekolah {
   min-width: 100%;
   height: 100vh;
@@ -111,88 +103,11 @@ section .judul-prestasi {
   align-items: center;
   gap: 2rem;
   font-family: "Kanit", sans-serif;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1600' height='1000' preserveAspectRatio='none' viewBox='0 0 1600 1000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1081%26quot%3b)' fill='none'%3e%3cpath d='M 0%2c412 C 160%2c455.2 480%2c623.2 800%2c628 C 1120%2c632.8 1440%2c474.4 1600%2c436L1600 1000L0 1000z' fill='rgba(32%2c 94%2c 18%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1081'%3e%3crect width='1600' height='1000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
 }
-
-.sejarah-sekolah {
-  min-width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  font-family: "Kanit", sans-serif;
-}
-
-/* identts */
-.identitas-sekolah {
-  min-width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  font-family: "Kanit", sans-serif;
-}
-/* untuk dekstop */
-@media(min-width: 700px){
-  .judul-identitas{
-    text-align: center;
-    padding: 5px 10px 20px;
-  }
-  .isi-identitas {
-    width: 50%;
-    height: auto;
-    margin: 20px auto;
-    background-color: white;
-    border: 1px solid rgb(229, 229, 229);
-    border-radius: 10px;
-    padding: 20px;
-  }
-  .open-identitas{
-    padding: 10px;
-    cursor: pointer;
-    color: white;
-    border-radius: 10px;
-  }
-  .close-identitas{
-    display: flex;
-    justify-content: end;
-    font-size: 30px;
-  }
-  .popup-identitas{
-    width: 100%;
-    display: none;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10000;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  .isipopup-identitas::-webkit-scrollbar{
-    display: none;
-  }
-  .isipopup-identitas{
-    cursor: pointer;
-    background-color: green;
-    color: white;
-    border: 2px solid yellow;
-    padding: 10px 15px 10px;
-    width: 50%;
-    height: 550px;
-    border-radius: 10px;
-    overflow: auto;
-  }
-  #isi1-inone{
-    display: none;
-  }
-}
-/* end */
 /* pp-guru2 */
 .all-guru{
-padding: 10% 0px 10%;
+padding: 10% 0px 6%;
 cursor: pointer;
 }
 .jdl-guru{
@@ -237,6 +152,73 @@ cursor: pointer;
   padding: 10px;
   display: block;
 }
+/*pp sekolah*/
+.all-ppsekolah{
+  padding: 7% 0px 0px ;
+ }
+ .judul-ppsekolah{
+   text-align: center;
+   width: 100%;
+ }
+ .judul-ppsekolah b{
+   font-size: 30px;
+ }
+ .judul-ppsekolah2{
+   display: none;
+ }
+ .box-sekolah{
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+   padding: 10px;
+ }
+ .item-sekolah{
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  width: 30%;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid yellow;
+  background-color: green;
+ }
+ .img-sekolah{
+   width: 100px;
+   height: 100px;
+   border-radius: 10px;
+ }
+ .popup-sekolah{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url(aset/bgnuri.jpg);
+  border-image: fill 0 linear-gradient(#0003,#0003);
+  display: none;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  z-index: 10000;
+ }
+ .close-btn{
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: end;
+  font-size: 30px;
+ }
+ .isi-popup{
+  width: 60%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: green;
+  cursor: pointer;
+  border: 2px solid yellow;
+ }
 /* fasilitas */
 section.fasilitas{
   padding-top: 8%;
@@ -300,30 +282,6 @@ section.fasilitas{
   border: 1px solid rgb(121, 121, 121);
   text-decoration: none;
 }
-/* visimisi */
-.visimisi-sekolah {
-  min-width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  font-family: "Kanit", sans-serif;
-}
-
-.isi-visimisi1 {
-  width: 70%;
-  color: rgb(24, 24, 24);
-  font-size: 25px;
-  background-color: white;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-#popup-visimisi {
-  display: none;
-}
-
-/* visimisi end */
 .isi-sambutan2 {
   width: 50%;
   padding: 0px 5px 0px;
@@ -342,7 +300,6 @@ section.fasilitas{
   border-radius: 20px;
   width: 20%;
 }
-
 /* section 3 */
 .judul-berita {
   width: 80%;
@@ -1131,7 +1088,6 @@ section.JURUSAN{
     justify-content: space-evenly;
   }
 }
-
 /* scetion7 */
 .judul-kontak {
   padding: 10px;
@@ -1202,9 +1158,6 @@ textarea.form-input {
 .form-button:hover {
   background-color: #ff5f59;
 }
-
-.t-kontak {}
-
 .text-kontak {
   width: 40%;
   height: auto;
@@ -1218,24 +1171,19 @@ textarea.form-input {
   gap: 10px;
   border-radius: 10px;
 }
-
-/* scetion7 */
+/* scetion8 */
 .map-container {
   text-align: center;
   padding: 10px;
   background-attachment: fixed;
 }
-
 iframe {
   width: 80%;
 }
-
 .judul-lokasi {
   width: 100%;
   font-size: 20px;
 }
-
-/* section8 */
 footer {
   width: 100%;
   padding: 8% 10px 8%;
@@ -1279,62 +1227,25 @@ footer {
 
 
 @media (max-width: 600px) {
-
   /* section2 */
-  .sambutan {
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    padding-bottom: 20px;
-    background-image: none;
-    height: 1000px;
+  .isi-sambutan2{
+    width: 100%;
+    background-color: transparent;
+    padding: 10px 15px 10px;
   }
-
-  /* new apdet */
   /* pp seklah */
   .profil-sekolah {
-    min-width: 100%;
+    background-image: none;
+    height: auto;
+    width: 100%;
     flex-direction: column;
     gap: 2rem;
     padding-top: 10%;
     padding-bottom: 30px;
   }
-
   .kepsek-jpg {
     width: 50%;
     height: 30%;
-  }
-
-  .sejarah-sekolah {
-    padding-top: 10%;
-    min-width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-  }
-
-  /* identts */
-  .identitas-sekolah {
-    overflow: none;
-    min-width: 100%;
-    height: 900px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-  }
-
-  .isi-identitas {
-    width: 100%;
-    min-height: 800px;
-    padding-left: 10px;
-    line-height: 1.6;
-  }
-  #isi2-inone{
-    display: none;
   }
   /* pp-guru */
   .jdl-guru{
@@ -1342,10 +1253,8 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding: 10px 10px 0px;
-    margin-bottom: 10px;
-  }
-  .jdl-guru p{
     font-size: 12px;
+    margin-bottom: 10px;
   }
   .judulguru-2{
     text-align: start;
@@ -1364,9 +1273,9 @@ footer {
     display: flex;
   }
   .img-guru{
-    height: 100%;
-    width: 130px;
-    border-radius: 10px 0px 0px 10px;
+    height: 130px;
+    width: 100%;
+    border-radius: 10px;
   }
   .all-guru{
     overflow: none;
@@ -1374,16 +1283,52 @@ footer {
   }
   .box-guru{
     display: flex;
+    justify-content: start;
+    overflow: auto;
     flex-wrap: nowrap;
+    padding: 0px 10px 0px;
+  }
+  .item-guru{
+    min-width: 50%;
+    flex-direction: column;
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .btn-guru{
+    display: none;
+  }
+  /* profil sekolah */
+  .judul-ppsekolah{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 10px 0px;
+    width: 100%;
+  }
+  .judul-ppsekolah b{
+    font-size: 20px;
+  }
+  .judul-ppsekolah{
+    text-align: start;
+  }
+  .judul-ppsekolah2{
+    display: flex;
+    font-size: 20px;
+  }
+  .box-sekolah{
     justify-content: start;
     overflow: auto;
     padding: 0px 10px 0px;
   }
-  .item-guru{
-    min-width: 80%;
+  .item-sekolah{
+    min-width: 90%;
   }
-  .btn-guru{
-    display: none;
+  .isi-popup{
+    border-radius: 20px 0px 20px 20px ;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
   }
   /* fasilitas */
   .judul-fasilitas{
@@ -1442,40 +1387,6 @@ footer {
     justify-content: center;
     color: black;
   }
-
-  /* visimisi */
-  .visimisi-sekolah {
-    padding-top: 10%;
-    min-width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-  }
-
-  .isi-visimisi1 {
-    width: 90%;
-    color: rgb(24, 24, 24);
-    font-size: 18px;
-    background-color: white;
-    padding: 10px;
-    border-radius: 10px;
-  }
-
-  .paero-jpg {
-    width: 70%;
-    height: 200px;
-  }
-
-  .isi-sambutan2 {
-    width: 90%;
-    background-color: rgb(255, 255, 255);
-  }
-
-  #h2-sambutan {
-    text-align: center;
-  }
-
   /* Section3 */
   .judul-berita{
     padding: 0;
@@ -1525,11 +1436,9 @@ footer {
   .isi-next a {
     color: white;
   }
-
   .popupbox {
     padding: 2em 0.5em;
   }
-
   /* section4 */
   .judul-prestasi {
     width: 100%;
@@ -1735,50 +1644,6 @@ footer {
     width: 100%;
   }
 }
-
-@media (max-width: 301px) {
-
-  /* profil seklah */
-  .profil-sekolah {
-    padding-top: 20%;
-    height: 1300px;
-  }
-
-  .isi-sambutan2 {
-    width: 100%;
-    font-size: 13px;
-  }
-
-  .kepsek-jpg {
-    height: 200px;
-  }
-
-  /* sejarah-sekolah */
-  .sejarah-sekolah {
-    padding-top: 100%;
-    display: flex;
-    align-items: center;
-    height: 100vh;
-  }
-  /* visimisi */
-  .visimisi-sekolah {
-    padding-top: 10%;
-  }
-
-  .isi-visimisi1 {
-    height: 900px;
-    overflow: hidden;
-  }
-
-  #popup-visimisi {
-    display: flex;
-  }
-
-  #visi-none {
-    display: none;
-  }
-}
-
 /* respponsive tambahan */
 @media(max-width: 320px) {
   .tgl-berita {

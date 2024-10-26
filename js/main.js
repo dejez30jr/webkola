@@ -80,28 +80,19 @@ document.querySelectorAll('.popupbox_js').forEach(item => {
     });
 });
 // popup End
-
-// pop up identitas
-const openI= document.getElementById("open-identitas");
-const popupI= document.querySelector(".popup-identitas");
-const closeI= document.querySelector('.close-identitas')
-openI.addEventListener("click", function(){
-  popupI.style.display= "flex";
-});
-closeI.addEventListener("click", function(){
-  popupI.style.display= "none";
-});
-
-
-//pop end
-
-// slide pp guru bray
-function slideLeft() {
-    const container = document.querySelector('.card-container');
-    container.scrollBy({ left: -300, behavior: 'smooth' });
-  }
-  
-  function slideRight() {
-    const container = document.querySelector('.card-container');
-    container.scrollBy({ left: 300, behavior: 'smooth' });
-  }
+// popup sekolah
+const item= document.querySelectorAll('.item-sekolah');
+item.forEach(card=>{
+    card.addEventListener('click', function(){
+        const popup= this.querySelector('.popup-sekolah');
+        popup.style.display= "flex";
+    })
+})
+const closep= document.querySelectorAll('.close-btn');
+closep.forEach(button=>{
+    button.addEventListener('click', function(event){
+        event.stopPropagation();
+        const popup= this.closest('.popup-sekolah');
+        popup.style.display="none";
+    })
+})

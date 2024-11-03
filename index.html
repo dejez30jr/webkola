@@ -2,298 +2,828 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <meta nama="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=DynaPuff:wght@400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMK NURUL IMAN</title>
+  <link rel="icon"
+    href="https://1.bp.blogspot.com/-bM9RG23YSLU/YQuWb8SK7rI/AAAAAAAAAvo/hkAyqZaSDpsSUBKGZ9Fiv9PZfgHHUX3ngCLcBGAsYHQ/w1200-h630-p-k-no-nu/Logo%2BSekolah%2BSMK%2BNURUL%2BIMAN.jpeg">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 </head>
 
+<!-- project ini kreatifitas rpl angkatan pertama  -->
+
 <body>
-    <!-- ini nav bro -->
-    <nav class="navbar navbar-expand-lg fixed-top" id="nav">
+  <!-- server down -->
+  <div class="server-down">
+    <p>Tidak mendukung di prangkat anda</p>
+  </div>
+  <div class="all-body">
+    <!-- ini navbar -->
+    <div class="all-body">
+      <!-- ini navbar -->
+      <nav class="navbar navbar-expand-lg fixed-top p-2 bg-light " id="nav">
         <div class="container-fluid">
-            <div class="logo">
-                <a class="navbar-brand fw-bold" href="#">Dz30</a>
+          <a href="#home">
+            <img src="aset/smknuri.jpeg" width="50" height="50" style="border-radius: 50%; margin: 5px; margin: 5px;">
+          </a>
+          <a class="navbar-brand fs-3" href="#home" id="none">SMK NURUL IMAN</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <div class="menu-icon">
-                    <i class="ph ph-list"></i>
-                </div>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title fs-3 text-dark" id="offcanvasNavbarLabel">Menu</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 gap-5">
-                        <li class="nav-item">
-                            <a class="nav-link active fs-5 fw-bold" id="nav_a" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active fs-5 fw-bold" id="nav_a" aria-current="page"
-                                href="#project">Project</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active fs-5 fw-bold" id="nav_a" aria-current="page"
-                                href="#skils">Skils</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active fs-5 fw-bold" id="nav_a" aria-current="page"
-                                href="#Pengalaman">Pengalaman</a>
-                        </li>
-                        <li class="nav-item kontak">
-                            <a class="nav-link active fs-5 fw-bold" id="nav_a" aria-current="page"
-                                href="#Pengalaman">Contact</a>
-                            <div class="popup">
-                                <div class="popup-nav">
-                                    <span class="close">&times;</span>
-                                    <img src="https://thumbs.dreamstime.com/b/contact-me-word-wooden-cubes-written-188527637.jpg"
-                                        class="popup-img">
-                                    <form action="">
-                                        <label for="nama">Nama</label>
-                                        <input type="text">
-                                        <label for="Email">Email</label>
-                                        <input type="email">
-                                        <label for="massage">Pesan</label>
-                                        <textarea name="massage" id="" rows="5"></textarea>
-                                        <input type="button" value="Kirim" id="submit">
-                                    </form>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item dropdown">
+                  <a class="nav-link fs-4 m-3" href="#ppsekolah" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    ᴘʀᴏꜰɪʟ ꜱᴇᴋᴏʟᴀʜ
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-4 m-3 tutup-nav " aria-current="page" href="#Berita">ʙᴇʀɪᴛᴀ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-4 m-3 tutup-nav " aria-current="page" href="#Prestasi">ᴘʀᴇꜱᴛᴀꜱɪ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-4 m-3 tutup-nav " aria-current="page" href="#Ekskul">ᴇᴋꜱᴛʀᴀᴋᴜʀɪᴋᴜʟᴇʀ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-4 m-3 tutup-nav " aria-current="page" href="#Jurusan">ᴊᴜʀᴜꜱᴀɴ</a>
+                </li>
+                <li class="nav-item" id="navli-none">
+                  <a class="nav-link fs-4 m-3 tutup-nav " aria-current="page" href="#guru">ɢᴜʀᴜ ᴅᴀɴ ᴛᴇɴᴀɢᴀ
+                    ᴘᴇɴᴅɪᴅɪᴋᴀɴ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-4 m-3 tutup-nav " aria-current="page" href="#Kontak">ᴋᴏɴᴛᴀᴋ</a>
+                </li>
+                <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li> -->
+              </ul>
             </div>
+          </div>
         </div>
-    </nav>
-    <!-- content Head-->
-    <div class="containers">
-        <div class="judul-card">
-            <h1>hallo nama saya derris.h</h1>
-            <p>Selamat datang di portofolio pengembang frontend saya! Saya Deris pengembang frontend yang terampil dan
-                kreatif dengan hasrat untuk menciptakan frontend yang cantik responsif "Jadi frontdev yang creatif tanpa
-                sepenuh nya bantuan AI" dan ramah pengguna.</p>
-            <br>
-            <div class="btn-cv">
-                <a href="https://www.instagram.com/dz.frontdev/?utm_source=ig_web_button_share_sheet"><i
-                        class="ph ph-instagram-logo"></i></a>
-                <a href="https://github.com/dejez30jr"><i class="ph ph-github-logo"></i></a>
-                <a href="https://whatsaap.com"><i class="ph ph-whatsapp-logo"></i></a>
-            </div>
-        </div>
-        <div class="card-judul">
-            <img src="aset/sapiens (2).png" alt="">
-        </div>
-    </div>
-    <!-- content body nya bre -->
-    <section id="project">
-        <div class="judul-project">
-            <h1>Project saya</h1>
-            <div class="icon-project">
-                <i class="ph ph-caret-right" id="icon-project"></i>
-                <!--popup -->
-                <div class="popup">
-                    <div class="popup-content">
-                        <span class="close">&times;</span>
-                        <img src="aset/pepuskab.id.png" class="popup-img">
-                        <div class="title_popup">
-                            <h2>Perpuskab.id</h2>
-                            <p>web ini di buat dengan html css dan js tujuan dari web ini untuk memperkenal kan
-                                perpustakaan
-                                digital di sekolah
-                            </p>
-                        </div>
-                        <img src="aset/rpl.png" class="popup-img">
-                        <div class="title_popup">
-                            <h2>Web kelas</h2>
-                            <p>web ini di buat dengan html css dan js tujuan dari web ini untuk memperkenalkan teknologi
-                                informasi yang di buat oleh anak rpl geniozis
-                            </p>
-                        </div>
-                        <img src="aset/webguru.png" class="popup-img">
-                        <div class="title_popup">
-                            <h2>Web guru</h2>
-                            <p>web ini di buat dengan html css dan js ini adalah tugas akhir semester saya memmbuat
-                                website
-                                portofolio untuk guru yang kami buatkan
-                            </p>
-                        </div>
-                        <img src="aset/lomba.png" class="popup-img">
-                        <div class="title_popup">
-                            <h2>Project olimpade tik</h2>
-                            <p>web ini di buat dengan html css dan js meskipun saya tidak memndapatkan juara disana
-                                ini adalah pengalaman pertama saya mengikuti lomba web design ini
-                            </p>
-                        </div>
-                        <img src="aset/webguru.png" class="popup-img">
-                        <div class="title_popup">
-                            <h2>Web guru</h2>
-                            <p>web ini di buat dengan html css dan js ini adalah tugas akhir semester saya memmbuat
-                                website
-                                portofolio untuk guru yang kami buatkan
-                            </p>
-                        </div>
-                        <img src="aset/hm-company.png" class="popup-img">
-                        <div class="title_popup">
-                            <h2>HM company</h2>
-                            <p>web ini di buat dengan html css js dan framework bootstrap tujuan web ini di buat karena
-                                abang saya yang mempunyai company dia ingin membuat
-                                company portofolio nya meskipun web ini suda tidak digunakan lagi oleh abang saya tetapi
-                                pengalaman membuat nya masih terasa
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="project d-flex gap-2">
-            <div class="kartu_project bg_project1">
-                <div class="isi-kartu">
-                    <h2>Perpuskab</h2>
-                    <p>Lihat selengkapnya</p>
-                </div>
-            </div>
-            <div class="kartu_project bg_project2">
-                <div class="isi-kartu">
-                    <h1>Geniozis-web</h1>
-                    <p>Lihat selengkapnya</p>
-                </div>
-            </div>
-            <div class="kartu_project bg_project3">
-                <div class="isi-kartu">
-                    <h1>Web-guru</h1>
-                    <p>Lihat selengkapnya</p>
-                </div>
-            </div>
-            <div class="kartu_project bg_project4" id="none">
-                <div class="isi-kartu">
-                    <h1>Project-lomba</h1>
-                    <p>Lihat selengkapnya</p>
-                </div>
-            </div>
-            <div class="kartu_project bg_project5" id="none">
-                <div class="isi-kartu">
-                    <h1>Hm-company</h1>
-                    <p>Lihat selengkapnya</p>
-                </div>
-            </div>
-            <div class="kartu_project bg_project6" id="none">
-                <div class="isi-kartu">
-                    <h1>Web-sekolah</h1>
-                    <p>Lihat selengkapnya</p>
-                </div>
-            </div>
-        </div>
-    </section>
+      </nav>
 
-    <section id="skils">
-        <div class="judul-skils">
-            <h1>Skils & Education</h1>
+      <!-- section 1 -->
+      <div class="containers" id="home">
+        <p style="font-size: 40px; font-weight: bold; color: white; text-align: center;"></p>
+      </div>
+      <!-- section 2 (sambutan) -->
+      <!-- kepala sekolah -->
+      <div class="profil-sekolah" id="sambutan">
+        <img src="aset/paero.png" class="kepsek-jpg">
+        <div class="isi-sambutan2">
+          <h2 style=" margin-bottom: 30px" id="h2-sambutan">Sambutan kepala sekolah</h2>
+          <p style="font-size: 20px;">yang pertama yang paling utama kita panjatkan puja puji serta syukur khadirat
+            allah swt yang telah memberikan nikmat sehat dan iman</p>
+          <p style="font-size: 20px;">yang terhormat kepada pimpinan smk nurul iman yakni bapak ero rohada.MM selaku
+            kepala sekolah di smk serta yang terhormat guru guru dan staf sekolah</p>
+          <p style="font-size: 20px;">Terima kasih atas kepemimpinan yang inspiratif dan visi yang jelas dalam
+            memajukan
+            sekolah kami. Dukungan dan arahan Bapak/Ibu Kepala Sekolah sangat berarti bagi kami untuk terus berkembang
+            dan
+            berprestasi.</p>
         </div>
-        <div class="box_skils gap-3">
-            <div class="isi-skils">
-                <p>ketika saya belajar saya terus belajar di bidang front-end dan bereksperimen dengan kerangka kerja
-                    baru
-                    dan di sini Anda dapat melihat ringkasan keahlian saya di bidang front-end saya telah mempelajari
-                    html css js dan UI-designer
+      </div>
+      <!-- section 3 (berita)-->
+      <section class="berita" id="Berita"> <!-- edit (Azzam) -->
+        <div class="judul-berita">
+          <div class="judulberita-1">
+            <b>Berita</b>
+            <p>seputar berita smk nurul iman</p>
+          </div>
+          <div class="judulberita-2">
+            <i class="ph ph-caret-right"></i>
+          </div>
+        </div>
+        <div class="isi-berita popklik" data-popup="popupbox1">
+          <img src="aset/g-1.jpg" class="berita-jpg">
+          <div class="text-berita">
+            <b id="title-berita">Berbagi Takjil Osis SMK...</b>
+            <p class="title-secend">klik untuk mengetahui artikel berita ini <a
+                style="color: blue; cursor: pointer;">Readmore>></a></p>
+            <div class="tgl-berita">
+              <p style="background-color: black; color: white; padding: 2px 3px 2px; font-size: 10px">
+                17 Aug 2024</p>
+            </div>
+          </div>
+          <div class="popupbox" id="popupbox1"> <!-- popup -->
+            <div class="popup">
+              <img src="aset/g-1.jpg" alt="">
+              <h1>Berbagi Takjil Gratis Osis Nurul Iman</h1>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor hic reiciendis nobis itaque laboriosam
+                autem sequi dolore veniam. Aspernatur voluptas magni inventore repellendus reprehenderit illo
+                consectetur
+                nemo delectus quae modi.</p>
+              <p>Close</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="isi-berita popklik" data-popup="popupbox2">
+          <img src="aset/G-2.png" class="berita-jpg">
+          <div class="text-berita">
+            <b id="title-berita">Acara Lomba 17 Agustus</b>
+            <p class="title-secend">klik untuk mengetahui artikel berita ini <a
+                style="color: blue; cursor: pointer;">readmore>></a></p>
+            <div class="tgl-berita">
+              <p style="background-color: black; color: white; padding: 2px 3px 2px; font-size: 10px">
+                17 Aug 2024</p>
+            </div>
+          </div>
+          <div class="popupbox" id="popupbox2"> <!-- popup -->
+            <div class="popup">
+              <img src="aset/G-2.png" alt="">
+              <h1>Acara Lomba 17 Agustus</h1>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor hic reiciendis nobis itaque laboriosam
+                autem sequi dolore veniam. Aspernatur voluptas magni inventore repellendus reprehenderit illo
+                consectetur
+                nemo delectus quae modi.</p>
+              <p>Close</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="isi-berita popklik" data-popup="popupbox3">
+          <img src="aset/g-3.jpg" class="berita-jpg">
+          <div class="text-berita">
+            <b id="title-berita">Memperingati Hari Ibu.....</b>
+            <p class="title-secend">klik untuk mengetahui artikel berita ini <a
+                style="color: blue; cursor: pointer;">readmore>></a></p>
+            <div class="tgl-berita">
+              <p style="background-color: black; color: white; padding: 2px 3px 2px; font-size: 10px">
+                17 Aug 2024</p>
+            </div>
+          </div>
+          <div class="popupbox" id="popupbox3"> <!-- popup -->
+            <div class="popup">
+              <img src="aset/g-3.jpg" alt="">
+              <h1>Memperingati Hari Ibu Kartini</h1>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor hic reiciendis nobis itaque laboriosam
+                autem sequi dolore veniam. Aspernatur voluptas magni inventore repellendus reprehenderit illo
+                consectetur
+                nemo delectus quae modi.</p>
+              <p>Close</p>
+            </div>
+          </div>
+        </div>
+        <div class="isi-berita popklik" data-popup="popupbox4">
+          <img src="aset/g-4.jpg" class="berita-jpg">
+          <div class="text-berita">
+            <b id="title-berita">Acara Wisuda Kelulusan</b>
+            <p class="title-secend">klik untuk mengetahui artikel berita ini <a
+                style="color: blue; cursor: pointer;">readmore>></a></p>
+            <div class="tgl-berita">
+              <p style="background-color: black; color: white; padding: 2px 3px 2px; font-size: 10px">
+                17 Aug 2024</p>
+            </div>
+          </div>
+          <div class="popupbox" id="popupbox4"> <!-- popup -->
+            <div class="popup">
+              <img src="aset/g-4.jpg" alt="">
+              <h1>Acara Wisuda Kelulusan</h1>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor hic reiciendis nobis itaque laboriosam
+                autem sequi dolore veniam. Aspernatur voluptas magni inventore repellendus reprehenderit illo
+                consectetur
+                nemo delectus quae modi.</p>
+              <p>Close</p>
+            </div>
+          </div>
+        </div>
+        <div class="isi-berita popklik" data-popup="popupbox5">
+          <img src="aset/g-5.jpg" class="berita-jpg">
+          <div class="text-berita">
+            <b id="title-berita">Prampls Tahun Ajaran Baru</b>
+            <p class="title-secend">klik untuk mengetahui artikel berita ini <a
+                style="color: blue; cursor: pointer;">readmore>></a></p>
+            <div class="tgl-berita">
+              <p style="background-color: black; color: white; padding: 2px 3px 2px; font-size: 10px">
+                17 Aug 2024</p>
+            </div>
+          </div>
+          <div class="popupbox" id="popupbox5"> <!-- popup -->
+            <div class="popup">
+              <img src="aset/g-5.jpg" alt="">
+              <h1>Prampls Tahun Ajaran Baru</h1>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor hic reiciendis nobis itaque laboriosam
+                autem sequi dolore veniam. Aspernatur voluptas magni inventore repellendus reprehenderit illo
+                consectetur
+                nemo delectus quae modi.</p>
+              <p>Close</p>
+            </div>
+          </div>
+        </div>
+        <div class="isi-berita popklik" data-popup="popupbox6">
+          <img src="aset/g-6.jpg" class="berita-jpg">
+          <div class="text-berita">
+            <b id="title-berita">Pemotongan Hewan qurban</b>
+            <p class="title-secend">klik untuk mengetahui artikel berita ini <a
+                style="color: blue; cursor: pointer;">readmore>></a></p>
+            <div class="tgl-berita">
+              <p style="background-color: black; color: white; padding: 2px 3px 2px; font-size: 10px">
+                17 Aug 2024</p>
+            </div>
+          </div>
+          <div class="popupbox" id="popupbox6"> <!-- popup -->
+            <div class="popup">
+              <img src="aset/g-6.jpg" alt="">
+              <h1>Pemotongan Hewan Qurban</h1>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor hic reiciendis nobis itaque laboriosam
+                autem sequi dolore veniam. Aspernatur voluptas magni inventore repellendus reprehenderit illo
+                consectetur
+                nemo delectus quae modi <b>UCUP</b></p>
+              <p>Close</p>
+            </div>
+          </div>
+        </div>
+        <div class="next" style="width: 100%; justify-content: center; display: flex; margin: 10px;">
+          <p class="isi-next"
+            style="padding: 10px; color: white; border: 2px solid white; width: 30%; text-align: center;">
+            <a href="" style="text-decoration: none;">TAMPILKAN SEMUA</a>
+          </p>
+        </div>
+      </section>
+      <!-- section4 (prestasi) -->
+      <section class="prestasi" id="Prestasi"> <!-- edit (Azzam) -->
+        <div class="isi-prestasi">
+          <!-- <div class="card-prestasi"> -->
+          <div class="judul-prestasi">
+            <div class="judulprestasi-2">
+              <b>Prestasi</b>
+              <p>seputar prestasi smk nurul iman</p>
+            </div>
+            <div class="judulprestasi-1">
+              <i class="ph ph-caret-right"></i>
+            </div>
+          </div>
+          <div class="card mb-3" style="width: 100%; display: flex;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="https://i.ytimg.com/vi/EuHC3jmJ-Vo/maxresdefault.jpg" class="img-fluid rounded-start"
+                  alt="...">
+              </div>
+              <div class="col-md-8 p-2">
+                <div class="card-body">
+                  <h2 class="card-title">Prestasi smk nurul iman</h2>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional
+                    content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 " style="width: 100%;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="https://i.ytimg.com/vi/EuHC3jmJ-Vo/maxresdefault.jpg" class="img-fluid rounded-start"
+                  alt="...">
+              </div>
+              <div class="col-md-8 p-2">
+                <div class="card-body">
+                  <h2 class="card-title">Prestasi smk nurul iman</h2>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional
+                    content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 " style="width: 100%;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="https://i.ytimg.com/vi/EuHC3jmJ-Vo/maxresdefault.jpg" class="img-fluid rounded-start"
+                  alt="...">
+              </div>
+              <div class="col-md-8 p-2">
+                <div class="card-body">
+                  <h2 class="card-title">Prestasi smk nurul iman</h2>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional
+                    content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section5 (eskul) -->
+      <section class="Ekstrakurikuler" id="Ekskul"> <!-- edit (Azzam) -->
+        <div class="eskul">
+          <div class="judul-eskul">
+            <div class="juduleskul-1">
+              <b>Ekstrakurikuler</b>
+              <p>Seputar ekstrakulikuler smk nurul iman</p>
+            </div>
+            <div class="juduleskul-2">
+              <i class="ph ph-caret-right"></i>
+            </div>
+          </div>
+          <div class="card-eskul">
+            <div class="item-eskul1">
+              <spans></spans>
+            </div>
+            <div class="item-eskul2">
+              <spans></spans>
+            </div>
+            <div class="item-eskul3">
+              <spans></spans>
+            </div>
+            <div class="item-eskul4">
+              <spans></spans>
+            </div>
+            <div class="item-eskul5">
+              <spans></spans>
+            </div>
+            <div class="item-eskul6">
+              <spans></spans>
+            </div>
+            <div class="item-eskul7">
+              <spans></spans>
+            </div>
+            <div class="item-eskul8">
+              <spans></spans>
+            </div>
+            <div class="item-eskul9">
+              <spans></spans>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section6 (jurusan) -->
+
+      <!-- jurusan versi mobile end dekstop (apdet) -->
+      <section class="JURUSAN" id="Jurusan">
+        <div class="ketupat-jurusan">
+          <div class="judul-jurusan">
+            <b style="font-size: 35px;">Program keahlian</b>
+            <p>Seputar jurusan smk nurul iman</p>
+          </div>
+          <div class="jurusan-kolom">
+            <!-- Rekayasa Perangkat Lunak -->
+            <div class="item-kj popklik" data-popup="popupbox7">
+              <div class="i-kj">
+                <p id="p"></p>
+              </div>
+              <h2 class="h2">Rekayasa prangkat lunak</h2>
+            </div>
+            <!-- popup RPL -->
+            <div class="popupbox_js" id="popupbox7">
+              <div class="popup_js">
+                <div class="img-popup-jurusan">
+                  <img src="aset/g-6.jpg">
+                  <img src="aset/g-6.jpg">
+                  <img src="aset/g-6.jpg">
+                  <img src="aset/g-6.jpg">
+                </div>
+                <h1>Apa itu Jurusan Rekayasa Perangkat Lunak (RPL)</h1>
+                <p>Jurusan RPL adalah cabang ilmu teknik informatika yang fokus pada pengembangan perangkat lunak. Dalam
+                  bahasa sehari-hari, siswa jurusan ini belajar tentang cara membuat aplikasi, website, dan sistem
+                  informasi yang efisien dan inovatif.
+                  Jurusan RPL tak hanya melulu soal coding. Jurusan Rekayasa Perangkat Lunak menyeimbangkan antara
+                  kemampuan teknis dan non-teknis. Dalam perkuliahan, kamu akan di bekali dengan berbagai macam ilmu
+                  yang akan membuatmu menjadi insan di bidang Rekayasa Perangkat Lunak yang handal.</p>
+                <p><b>Close</b></p>
+              </div>
+            </div>
+            <!-- popup RPL End -->
+            <!-- RPL END -->
+
+            <!-- Akutansi -->
+            <div class="item-kj popklik" data-popup="popupbox8">
+              <div class="i-kj">
+                <p id="p"></p>
+              </div>
+              <h2 class="h2">Akuntansi Keuangan Lembaga</h2>
+            </div>
+            <!-- popup Akutansi -->
+            <div class="popupbox_js" id="popupbox8">
+              <div class="popup_js">
+                <div class="img-popup-jurusan">
+                  <img src="aset/g-6.jpg">
+                  <img src="aset/g-6.jpg">
+                  <img src="aset/g-6.jpg">
+                  <img src="aset/g-6.jpg">
+                </div>
+                <h1>Akuntansi Keuangan Lembaga (AKL)</h1>
+                <p>Kompetensi Keahlian Akuntansi dan Keuangan Lembaga merupakan salah satu jurusan yang termasuk Program
+                  Keahlian Akuntansi dan Keuangan yang ditempuh selama 3 tahun masa belajar. Sebagai rumpun Bidang
+                  Keahlian Bisnis Manajeman, untuk mempersiapkan peserta didik secara profesional sebagai staff
+                  accounting yang handal Kompetensi Keahlian Akuntansi dan Keuangan Lembaga secara umum memberikan
+                  keterampilan kepada peserta didik untuk mengelola dan melakukan pencatatan keuangan secara manual
+                  maupun komputerisasi, dan membekali peserta dengan keterampilan akuntansi, mengelola transaksi
+                  keuangan, pajak dan membentuk peserta didik yang bersikap mandiri dan berkarakter sehingga lulusannya
+                  dapat menjadi staff accounting yang handal.</p>
+                <p><b>Close</b></p>
+              </div>
+            </div>
+            <!-- popup Akutansi End -->
+            <!-- Akutansi END-->
+
+            <!-- Management Perkantoran -->
+            <div class="item-kj popklik" data-popup="popupbox9">
+              <div class="i-kj">
+                <p id="p"></p>
+              </div>
+              <h2 class="h2">Management perkantoran</h2>
+            </div>
+            <!-- popup Management Perkantoran -->
+            <div class="popupbox_js" id="popupbox9">
+              <div class="popup_js">
+                <div class="img-popup-jurusan">
+                  <img src="aset/g-6.jpg">
+                  <img src="aset/g-6.jpg">
+                  <img src="aset/g-6.jpg">
+                </div>
+                <h1>Jurusan MP (Manajemen Perkantoran)</h1>
+                <p>Jurusan Manajemen Perkantoran (MP) merupakan salah satu bidang studi di dunia pendidikan yang fokus
+                  pada pengembangan keterampilan dalam mengelola operasional dan administrasi di lingkungan perkantoran.
+                  Siswa jurusan MP mempelajari berbagai aspek yang terkait dengan manajemen administrasi, pengelolaan
+                  sumber daya manusia, serta strategi pengorganisasian dalam sebuah lingkungan kantor.
+
+                  Selama menjalani program studi, siswa MP diajarkan mengenai teknik-teknik manajemen administrasi yang
+                  efektif, termasuk pengelolaan waktu, pengarsipan, koordinasi rapat, serta penggunaan teknologi
+                  informasi dalam mendukung efisiensi administrasi. Mereka juga mempelajari keterampilan komunikasi yang
+                  baik, baik lisan maupun tertulis, yang sangat penting dalam lingkungan kerja kantor.</p>
+                <p><b>Close</b></p>
+              </div>
+            </div>
+            <!-- popup Management Perkantoran End -->
+            <!-- Management Perkantoran END -->
+          </div>
+      </section>
+
+
+      <!-- fasilitas -->
+      <section class="fasilitas" id="fasilitas">
+        <div class="judul-fasilitas">
+          <div class="judulfasilitas-2">
+            <b>Fasilitas sekolah</b>
+            <p>Seputar fasilitas sekolah</p>
+          </div>
+          <div class="judulfasilitas-1">
+            <i class="ph ph-caret-right"></i>
+          </div>
+        </div>
+        <div class="fasilitas-sekolah" id="fasilitas">
+          <div class="isi-fasilitas">
+            <div class="fasilitas-card">
+              <b style=" background-color: rgba(0, 0, 0, 0.5); color: white; padding: 5px;">Fasilitas lapangan</b>
+            </div>
+            <div class="fasilitas-card">
+              <b style=" background-color: rgba(0, 0, 0, 0.5); color: white; padding: 5px;">Fasilitas lapangan</b>
+            </div>
+            <div class="fasilitas-card">
+              <b style=" background-color: rgba(0, 0, 0, 0.5); color: white; padding: 5px;">Fasilitas lapangan</b>
+            </div>
+            <div class="fasilitas-card">
+              <b style=" background-color: rgba(0, 0, 0, 0.5); color: white; padding: 5px;">Fasilitas lapangan</b>
+            </div>
+            <div class="fasilitas-card">
+              <b style=" background-color: rgba(0, 0, 0, 0.5); color: white; padding: 5px;">Fasilitas lapangan</b>
+            </div>
+            <div class="fasilitas-card">
+              <b style=" background-color: rgba(0, 0, 0, 0.5); color: white; padding: 5px;">Fasilitas lapangan</b>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- pp guru Sec(tambahan dari pp sekolah)-->
+      <section class="all-guru" id="guru">
+        <div class="jdl-guru">
+          <div class="judulguru-2">
+            <b>Guru tenaga pendidikan</b>
+            <p>seputar guru dan tenaga pendidikan</p>
+          </div>
+          <div class="judulguru-1">
+            <a href="guru.html" style="text-decoration: none;">
+              <i class="ph ph-caret-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="box-guru">
+          <div class="item-guru">
+            <img src="aset/paero.png" class="img-guru">
+            <div class="isi-guru">
+              <b>Kepala sekolah</b>
+              <p>om erorohada</p>
+            </div>
+          </div>
+          <div class="item-guru">
+            <img src="aset/paero.png" class="img-guru">
+            <div class="isi-guru">
+              <b>Kepala sekolah</b>
+              <p>om erorohada</p>
+            </div>
+          </div>
+          <div class="item-guru">
+            <img src="aset/paero.png" class="img-guru">
+            <div class="isi-guru">
+              <b>Kepala sekolah</b>
+              <p>om erorohada</p>
+            </div>
+          </div>
+          <div class="item-guru">
+            <img src="aset/paero.png" class="img-guru">
+            <div class="isi-guru">
+              <b>Kepala sekolah</b>
+              <p>om erorohada</p>
+            </div>
+          </div>
+          <div class="item-guru">
+            <img src="aset/paero.png" class="img-guru">
+            <div class="isi-guru">
+              <b>Kepala sekolah</b>
+              <p>om erorohada</p>
+            </div>
+          </div>
+          <div class="item-guru">
+            <img src="aset/paero.png" class="img-guru">
+            <div class="isi-guru">
+              <b>Kepala sekolah</b>
+              <p>om erorohada</p>
+            </div>
+          </div>
+        </div>
+        <div class="btn-guru">
+          <a href="guru.html" style="text-decoration: none;">
+            <b
+              style="background-color: rgb(23, 22, 22); color: white; padding: 10px; border-radius: 10px; font-size: 13px;">Tampilkan
+              semua</b>
+          </a>
+        </div>
+      </section>
+
+      <!-- profil sekolah -->
+      <section class="all-ppsekolah" id="ppsekolah">
+        <div class="judul-ppsekolah">
+          <div class="judul-ppsekolah1">
+            <b>Profil sekolah</b>
+            <p>Seputar tentang smk nurul iman</p>
+          </div>
+          <div class="judul-ppsekolah2">
+            <i class="ph ph-caret-right"></i>
+          </div>
+        </div>
+        <div class="box-sekolah">
+          <div class="item-sekolah">
+            <img src="aset/smknuri.jpeg" alt="" class="img-sekolah">
+            <div class="isi-item_sekolah">
+              <b>Sejarah sekolah</b>
+              <p>lihat selengkapnya</p>
+            </div>
+            <!-- popop -->
+            <div class="popup-sekolah">
+              <div class="isi-popup">
+                <div class="close-btn">
+                  <span>&times;</span>
+                </div>
+                <h1>Sejarah smk nurul iman</h1>
+                <p>SMK Nurul Iman didirikan pada Tahun 1989 dengan 2 jurusan, Berupa jurusan
+                  Akutansi
+                  dan Ketatausahaan lalu berkembang menjadi sekertaris. Dengan jumlah siswa sekitar 120 siswa/i dengan
+                  SK
+                  izin
+                  operasional:0002/PK.01.04 Tanggal SK pendirian:2012-08-29 Status Kepemilikan SMK Nurul Iman: Yayasan
+                  SMK
+                  Nurul Iman dimiliki oleh: Yayasan Amal Ummat Islam Dengan kepala sekolah: Drs. Sul Chusosi
+                  Wakilkurikulum:
+                  Drs. Ero rohada Meluluskan siswa pertama kali pada:1992</p>
+              </div>
+            </div>
+          </div>
+          <div class="item-sekolah">
+            <img src="aset/smknuri.jpeg" alt="" class="img-sekolah">
+            <div class="isi-item_sekolah">
+              <b>Visi misi sekolah</b>
+              <p>lihat selengkapnya</p>
+            </div>
+            <!-- popop -->
+            <div class="popup-sekolah">
+              <div class="isi-popup">
+                <div class="close-btn">
+                  <span>&times;</span>
+                </div>
+                <h1>Visi misi smk nurul iman</h1>
+                <br>
+                <h2>Visi</h2>
+                <p>1. Memperteguh keimanan dan ketaqwaan terhadap Allah Subhanallah Wataala
+                  <br>
+                  2. Menghasilkan karakter pribadi yang memiliki kesadaran diri dalam mewujudkan kejujuran, keadilan,
+                  kedisiplinan, tanggung jawab, kepedulian ,responsive, dan santun dalam berprilaku
+                  <br>
+                  3. Membekali peserta didik dengan ilmu dan pengetahuan, teknologi ,komunikasi, dan keterampilan agar
+                  mampu
+                  bersaing dalam era milenial
+                  <br>
+                  4. Menghasilkan peserta didik yang kompeten, berkualitas, berprestasi, sesuai dengan bidang keilmuan
+                  dan
+                  keahlian
+                  <br>
+                  5. Menghasilkan entrepeneurship yang berdaya guna dan berdaya saing ditingkat local san nasional
                 </p>
+                <br>
+                <h2>Misi</h2>
+                <p>terciptanya iman yang bertaqwa cerdas dan berkarakter serta berdaya saing global</p>
+              </div>
             </div>
-            <div class="all-skils">
-                <img src="https://pbs.twimg.com/media/Ee6Bp9EX0AILuMq.jpg" class="skils-img">
-                <img src="https://th.bing.com/th/id/OIP.IQ1MlelyJy5KnWxHtVt3QQAAAA?rs=1&pid=ImgDetMain"
-                    class="skils-img">
-                <img src="https://th.bing.com/th/id/OIP.LyD5PgdzAkHCniPzX2pkZQHaHa?rs=1&pid=ImgDetMain"
-                    class="skils-img">
-                <img src="https://img.freepik.com/premium-photo/white-background-with-web-design-circle_1085346-35766.jpg"
-                    class="skils-img">
-                <img src="https://www.wizcase.com/wp-content/uploads/2022/02/en-bootstrap-logo.jpg" class="skils-img">
+          </div>
+          <div class="item-sekolah">
+            <img src="aset/smknuri.jpeg" alt="" class="img-sekolah">
+            <div class="isi-item_sekolah">
+              <b>Identitas sekolah</b>
+              <p>lihat selengkapnya</p>
             </div>
-        </div>
-    </section>
-
-    <section id="Pengalaman">
-        <div class="judul-pengalaman">
-            <h1>Pengalaman saya</h1>
-            <i class="ph ph-caret-right" id="icon-project"></i>
-        </div>
-        <div class="box_pengalaman d-flex">
-            <div class="kartu-pengalaman">
-                <img src="https://edufund.co.id/blog/wp-content/uploads/2024/01/Blog-Ilustrasi-Partners-RevoU-scaled.webp"
-                    class="pengalaman-img">
-                <div class="isi-pengalaman">
-                    <h3>mini-course RevoU</h3>
-                    <p>Pengalaman pertama saya pas awal mula belajar coding</p>
+            <!-- popop -->
+            <div class="popup-sekolah">
+              <div class="isi-popup" style="height: 100%; overflow: auto;">
+                <div class="close-btn">
+                  <span>&times;</span>
                 </div>
+                <h2>Identitas smk nurul iman</h2>
+                <b>Kode Registrasi</b>
+                <p>NSS: 402160805004</p>
+                <p>NPSN: 20103734</p>
+    
+                <b>Nama Resmi Sekolah</b>
+                <p>SMK Nurul Iman</p>
+    
+                <b>SK Pendirian</b>
+                <p>Nomor SK: Kep.034/101.A1/1/91</p>
+                <p>Tanggal SK: 01 Januari 1991</p>
+    
+                <b>Status Akreditasi</b>
+                <p>A</p>
+                <p>Nomor SK: 1347/BAN-SM/SK/2021</p>
+                <p>Tanggal SK: 8 Desember 2021</p>
+    
+                <b>Alamat Sekolah</b>
+                <p>Jalan: Jl. Pisangan Baru 4A</p>
+                <p>Desa/Kelurahan: Pisangan Baru</p>
+                <p>Kecamatan: Matraman</p>
+                <p>Kabupaten/Kota: Jakarta Timur</p>
+                <p>Provinsi: DKI Jakarta</p>
+                <p>Nomor Telepon: 021-8506347 / 021-8506347</p>
+              </div>
             </div>
-            <div class="kartu-pengalaman">
-                <img src="https://cdn.rri.co.id/berita/91/images/1702631073730-I/e43szy6n8d1qf69.jpeg"
-                    class="pengalaman-img">
-                <div class="isi-pengalaman">
-                    <h3>juara 1 mewarnai</h3>
-                    <p>Pengalaman sewaktu saya di kelas 4 sd </p>
-                </div>
-            </div>
-            <div class="kartu-pengalaman">
-                <img src="aset/otn.jpg" class="pengalaman-img">
-                <div class="isi-pengalaman">
-                    <h3>Lomba web design</h3>
-                    <p>Pengalaman pertama sewaktu smk lomba olimpiade tik</p>
-                </div>
-            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section id="penghargaan">
-        <div class="judul-penghargaan">
-            <h1>Penghargaan saya</h1>
-            <i class="ph ph-caret-right" id="icon-project"></i>
-        </div>
-        <div class="penghargaan">
-            <div class="kartu-penghargaan bg-Kpenghargaan1">
-            <a href="https://drive.google.com/file/d/1Cgr7PHaL-kBjMOL0ZgkYG-0oFCGBZJxF/view?usp=drive_link">
-                <h2 style="background-color: rgba(0,0,0,0.5); width: 100%; height: 100%; padding: 10px;">revou_id <br>
-                    <p class="fs-5">klik untuk melihat</p>
-                </h2>
-            </a>
-            </div>
-            <div class="kartu-penghargaan bg-Kpenghargaan2">
-            <a href="https://drive.google.com/file/d/1CihEuaMK1-qJ4zB14P4ifp45lTDslera/view?usp=drive_link">
-                <h2 style="background-color: rgba(0,0,0,0.5); width: 100%; height: 100%; padding: 10px;">Edspert_id <br>
-                    <p class="fs-5">klik untuk melihat</p>
-                </h2>
-            </a>
-            </div>
-            <div class="kartu-penghargaan bg-Kpenghargaan3">
-            <a href="">
-                <h2 style="background-color: rgba(0,0,0,0.5); width: 100%; height: 100%; padding: 10px;">Olimpiade tik
-                    <br>
-                    <p class="fs-5">klik untuk melihat</p>
-                </h2>
-            </a>
-            </div>
-        </div>
-    </section>
+      <!-- sction7 (kontak)-->
+      <section class="KONTAK" id="Kontak"> <!-- edit (Azzam) -->
 
-    <section>
-        <div class="footer">
-            <b>&copy; right dz30 2025</b>
+        <div class="judul-kontak">
+          <b>Contact</b>
+          <p>bantuan dan saran anda</p>
         </div>
-    </section>
+        <div class="kontak">
+          <div class="item-kontak">
+            <form class="colorful-form">
+              <div class="form-group">
+                <label class="form-label" for="name">Name:</label>
+                <input required="" placeholder="Enter your name" class="form-input" type="text">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="name">Subject:</label>
+                <input required="" placeholder="Enter your subject" class="form-input" type="text">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email:</label>
+                <input required="" placeholder="Enter your email" class="form-input" name="email" id="email"
+                  type="email">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="message">Message:</label>
+                <textarea required="" placeholder="Enter your message" class="form-input" name="message"
+                  id="message"></textarea>
+              </div>
+              <button class="form-button" type="submit">Submit</button>
+            </form>
+          </div>
 
-    <script src="main.js"></script>
+          <div class="text-kontak">
+            <div class="isi-kontak">
+              <i class="ph ph-map-pin"
+                style="border: 1px solid black; padding: 10px; border-radius: 10px; display: flex; justify-content: center; align-items: center;"></i>
+              <div class="t-kontak">
+                <strong>alamat</strong>
+                <p>jl pisangan baru </p>
+              </div>
+            </div>
+            <div class="isi-kontak">
+              <i class="ph ph-envelope-simple"
+                style="border: 1px solid black; padding: 10px; border-radius: 10px; display: flex; justify-content: center; align-items: center;"></i>
+              <div class="t-kontak">
+                <strong>email</strong>
+                <p>yahoyahon@gmail.com</p>
+              </div>
+            </div>
+            <div class="isi-kontak">
+              <i class="ph ph-phone"
+                style="border: 1px solid black; padding: 10px; border-radius: 10px; display: flex; justify-content: center; align-items: center;"></i>
+              <div class="t-kontak">
+                <strong>Phone</strong>
+                <p>0878679523</p>
+              </div>
+            </div>
+            <div class="isi-kontak">
+              <i class="ph ph-instagram-logo"
+                style="border: 1px solid black; padding: 10px; border-radius: 10px; display: flex; justify-content: center; align-items: center;"></i>
+              <div class="t-kontak">
+                <strong>instagram</strong>
+                <p>@smknuruliman</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section7 (maps) -->
+      <div class="map-container">
+        <div class="judul-lokasi">
+          <strong>Denah lokasi</strong>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1983.186304267757!2d106.87531522991641!3d-6.214492730441286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f483d54a537f%3A0x26aaca5434c73432!2sPERGURUAN%20NURUL%20IMAN%20Jakarta%20Timur!5e0!3m2!1sid!2sid!4v1725106991650!5m2!1sid!2sid"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <!-- section8 (footer) -->
+      <footer>
+        <div class="ftr">
+          <strong>About</strong>
+          <br>
+          <em>artikel</em>
+          <br>
+          <em>blog</em>
+          <br>
+          <em>berita</em>
+          <br>
+          <em>event</em>
+          <br>
+          <em>smknuruliman</em>
+        </div>
+        <div class="ftr">
+          <strong>Sponsor by</strong>
+          <br>
+          <em>PT. Design Printing </em>
+          <br>
+          <em>CV. Rizki Jaya Pratama</em>
+          <br>
+          <em>PT. Taharica</em>
+          <br>
+          <em>PT. Master Steel </em>
+          <br>
+          <em>PT. Cipta Rantau </em>
+          <br>
+          <em>CV. Rinjani Arta Sentosa</em>
+          <br>
+          <em> CV. Giri Zati</em>
+          <br>
+          <em>PT. alfamidi</em>
+        </div>
+        <div class="ftr">
+          <strong>Created by</strong>
+          <br>
+          <em>RPL</em>
+          <br>
+          <em>pa sulton</em>
+          <br>
+          <em>pa alvian</em>
+          <br>
+          <em><b><a href="p" style="color: white;">team_genfirst</a></b></em>
+        </div>
+        <div class="ftr-end">
+          <img src="aset/smknuri.jpeg" width="80" height="80" style="border-radius: 50%;">
+          <p style="font-size: 30px; margin-top: 20px;">smk nurul iman</p>
+        </div>
+      </footer>
+
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
